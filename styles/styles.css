@@ -1,0 +1,446 @@
+/*
+Make sure you import files in order (from top to bottom), based on what other files will need.
+
+For example, my variables file may need a font I imported, so typography is imported first...
+My mixins file probably needs a variable and possibly a font I imported, so my variables and typography files are imported before my mixins file...
+My globals file probably needs something from all three of the previously imported files, etc.
+*/
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Paulo Goode
+ * License URL: https://www.fontspring.com/licenses/paulogoode/webfont
+ *
+ *
+ */
+@font-face {
+  font-family: 'didonesque-roman';
+  src: url("assets/didonesque-roman-webfont.woff2") format("woff2"), url("assets/didonesque-roman-webfont.woff") format("woff"), url("assets/didonesque-roman.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* Set to border-box to keep consistentcy across width/positioning adjustments */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: flex;
+  flex-flow: row wrap; }
+
+body {
+  /* Set to 62.5% so that 1rem = 10pt font */
+  font-size: 62.5%;
+  font: inherent;
+  line-height: 28px; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  position: relative;
+  text-decoration: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%; }
+
+/* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+.section-title {
+  color: #A0B0C4;
+  font-family: 'didonesque-roman';
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 52px;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 100%; }
+
+.section-description {
+  align-items: center;
+  text-align: center;
+  width: 60%; }
+
+section {
+  padding: 80px 75px;
+  width: 100%; }
+
+.container {
+  color: #3d3d3d;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.toc--book-preview {
+  width: 50%; }
+  .toc--book-preview .cover-wrapper {
+    margin: 0 auto;
+    width: 400px; }
+  .toc--book-preview .book-cover {
+    width: 400px; }
+
+.toc--list-section {
+  width: 50%; }
+  .toc--list-section .section-title {
+    text-align: left; }
+  .toc--list-section .toc-list {
+    padding: 0 0 30px; }
+  .toc--list-section .chapter-download-icon {
+    float: right; }
+    .toc--list-section .chapter-download-icon.not-available {
+      opacity: .2; }
+
+.get-book-container {
+  display: flex;
+  width: 100%; }
+
+.hero-nav-link--get-book {
+  background: #A0B0C4;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px 30px; }
+
+.about-section {
+  background: #A0B0C4;
+  color: #fff;
+  padding: 80px 0; }
+  .about-section .section-title {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    text-align: left;
+    width: 60%; }
+  .about-section .book-description {
+    margin: 0 auto;
+    width: 60%; }
+
+.influencers {
+  justify-content: center; }
+  .influencers .influencer-container {
+    justify-content: space-between;
+    padding: 60px 0 0;
+    width: 100%; }
+  .influencers .influencer {
+    justify-content: space-around;
+    width: 25%; }
+  .influencers .influencer-container--inner {
+    margin: 0 auto;
+    padding: 0 0 40px;
+    width: 120px; }
+  .influencers .influencer--image {
+    background: url(assets/the-face.jpg) no-repeat center 25%/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px; }
+  .influencers .influencer-name {
+    color: #3d3d3d;
+    font-weight: 600px;
+    text-align: center; }
+  .influencers .influencer-title {
+    color: #9B9B9B;
+    font-size: .5rem;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase; }
+
+.events {
+  justify-content: center; }
+  .events .event-list {
+    padding: 40px 0; }
+  .events .col.event-date {
+    width: 20%; }
+  .events .col.event-details {
+    width: 60%; }
+  .events .col.event-tix {
+    width: 20%; }
+  .events .event-meta-titles {
+    color: #A0B0C4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 0 0 20px; }
+  .events .event {
+    padding: 0 0 40px; }
+  .events .event.free {
+    background: #D1EFF9;
+    margin: 0 0 40px;
+    padding: 60px 0; }
+    .events .event.free ul {
+      border-left: 3px solid #3d3d3d;
+      line-height: 40px;
+      margin: 20px 0;
+      padding: 0 0 0 20px; }
+    .events .event.free li {
+      font-size: .9rem;
+      font-weight: 600; }
+  .events .event-title {
+    font-weight: 600; }
+  .events .event-location {
+    color: #A0B0C4;
+    font-size: .6rem;
+    line-height: 17px;
+    padding: 0 0 7px;
+    text-transform: uppercase;
+    width: 80%; }
+  .events .event-description {
+    width: 80%; }
+  .events .event-link {
+    color: #3d3d3d; }
+    .events .event-link:after {
+      background: url(assets/link-highlight.svg);
+      content: '';
+      height: 5px;
+      width: 64px;
+      position: absolute;
+      top: 19px;
+      left: -6px; }
+
+.event-feedback-container {
+  flex-flow: column;
+  margin: 0 auto;
+  padding: 0 0 60px;
+  width: 60%; }
+
+.photo-container {
+  float: left;
+  padding: 0 0 20px; }
+
+.photo-preview {
+  background: #3d3d3d;
+  height: 60px;
+  width: 90px; }
+  .photo-preview + .photo-preview {
+    margin: 0 0 0 20px; }
+
+.feedback-container {
+  border-left: 3px solid #3d3d3d;
+  margin: 10px 0 0;
+  padding: 0 0 0 20px; }
+
+.feedback {
+  font-style: italic;
+  font-size: .9rem;
+  padding: 0 0 12px;
+  width: 80%; }
+
+.connect-container {
+  flex-flow: row wrap;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 60%; }
+
+.connect-button {
+  color: #3d3d3d; }
+  .connect-button:after {
+    background: url(assets/link-highlight.svg);
+    content: '';
+    height: 5px;
+    width: 64px;
+    position: absolute;
+    top: 19px;
+    left: -4px; }
+
+footer.row {
+  background: #A0B0C4;
+  color: #FFF;
+  font-weight: 400;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 75px; }
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 28px 0; }
+
+.social-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 21px 0;
+  width: 100px; }
+
+.social-link {
+  -webkit-box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
+  -moz-box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
+  box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
+  border-radius: 50px;
+  display: inline-block;
+  height: 37px;
+  width: 37px; }
+
+.social-link#medium {
+  background: #fff url(assets/medium-logo.png) no-repeat 60% 65%/70%;
+  margin: 0 2% 0 0; }
+
+.social-link#twitter {
+  background: #fff url(assets/twitter-logo.png) no-repeat 60% 65%/70%; }
+
+@media (max-width: 786px) {
+  /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+  .section-title {
+    font-size: 1.4rem;
+    line-height: 32px; }
+
+  .section-description {
+    width: 100%; }
+
+  section {
+    padding: 40px;
+    width: 100%; }
+
+  .container {
+    font-size: .75rem; }
+
+  .hero {
+    height: 450px;
+    padding: 30px 40px; }
+    .hero nav {
+      display: none; }
+    .hero .section-title {
+      font-size: 1.4rem; }
+
+  .hero-nav-link--get-book {
+    border-radius: 3px;
+    text-align: center;
+    width: 100%; }
+
+  .toc {
+    flex-flow: column; }
+
+  .toc--book-preview {
+    margin: 0 0 20px;
+    width: 100%; }
+    .toc--book-preview .cover-wrapper {
+      width: 260px; }
+    .toc--book-preview .book-cover {
+      width: 300px; }
+
+  .toc--list-section {
+    width: 100%; }
+
+  .hero-nav-link--get-book {
+    margin: 0 auto; }
+
+  .about-section {
+    padding: 60px 40px; }
+    .about-section .section-title {
+      width: 100%; }
+    .about-section .book-description {
+      width: 100%; }
+
+  .influencers .influencer-container {
+    padding: 40px 0 20px; }
+  .influencers .influencer {
+    justify-content: space-around;
+    width: 50%; }
+
+  .events .event-list {
+    padding: 40px 0; }
+  .events .col.event-date {
+    width: 100%; }
+  .events .col.event-details {
+    width: 100%; }
+  .events .col.event-tix {
+    margin: 12px 0 0;
+    width: 100%; }
+  .events .event-meta-titles {
+    display: none; }
+  .events .event {
+    flex-flow: column;
+    padding: 0 0 20px; }
+    .events .event + .event {
+      padding: 20px 0; }
+  .events .event.free li {
+    font-size: 12px;
+    font-weight: 600; }
+  .events .event.free {
+    padding: 30px 30px; }
+  .events .event-description {
+    width: 100%; }
+
+  .event-feedback-container {
+    margin: 20px 0 0;
+    width: 100%; }
+    .event-feedback-container .photo-container {
+      padding: 0 0 10px; }
+    .event-feedback-container .photo-preview + .photo-preview {
+      margin: 0 0 0 10px; }
+
+  .feedback {
+    width: 100%; }
+
+  .connect-container {
+    width: 100%; }
+
+  footer.row {
+    padding: 0 40px; }
+
+  .social-container {
+    width: 95px; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="11px" viewBox="0 0 10 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>download-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0.926,9.6 L9.074,9.6 L9.074,10.776 L0.926,10.776 L0.926,9.6 Z M9.074,4.35 L5,8.424 L0.926,4.35 L3.25,4.35 L3.25,0.85 L6.75,0.85 L6.75,4.35 L9.074,4.35 Z" id="download-button" fill="#4A4A4A"></path>
+    </g>
+</svg>

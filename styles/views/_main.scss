@@ -1,0 +1,331 @@
+section {
+  padding: 80px 75px;
+  width: 100%;
+}
+
+.container {
+  color: $dark-grey;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: $montserrat;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+
+//! TABLE OF CONTENTS __________________
+//! ____________________________________
+
+.toc {
+
+}
+
+.toc--book-preview {
+  width: 50%;
+
+  .cover-wrapper {
+    margin: 0 auto;
+    width: 400px
+  }
+
+  .book-cover {
+    width: 400px;
+  }
+}
+
+.toc--list-section {
+  width: 50%;
+
+  .section-title {
+    text-align: left;
+  }
+
+  .toc-list {
+    padding: 0 0 30px;
+  }
+
+  .chapter-download-icon {
+    float: right;
+
+    &.not-available {
+      opacity: .2;
+    }
+  }
+}
+
+.get-book-container {
+  display: flex;
+  width: 100%;
+}
+
+.hero-nav-link--get-book {
+  background: $gun-metal;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px 30px;
+}
+
+
+
+
+//! ABOUT SECTION ______________________
+//! ____________________________________
+
+.about-section {
+  background: $gun-metal;
+  color: #fff;
+  padding: 80px 0;
+
+  .section-title {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    text-align: left;
+    width: 60%;
+  }
+
+  .book-description {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+
+
+
+//! INFLUENCERS ________________________
+//! ____________________________________
+
+.influencers {
+  justify-content: center;
+
+  .influencer-container {
+    justify-content: space-between;
+    padding: 60px 0 0;
+    width: 100%;
+  }
+
+  .influencer {
+    justify-content: space-around;
+    width: 25%;
+  }
+
+  .influencer-container--inner {
+    margin: 0 auto;
+    padding: 0 0 40px;
+    width: 120px;
+  }
+
+  .influencer--image {
+    background: url(assets/the-face.jpg) no-repeat center 25% / cover;
+    @include background-cover;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
+  }
+
+  .influencer-name {
+    color: $dark-grey;
+    font-weight: 600px;
+    text-align: center;
+  }
+
+  .influencer-title {
+    color: #9B9B9B;
+    font-size: .5rem;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+//! EVENTS _____________________________
+//! ____________________________________
+
+.events {
+  justify-content: center;
+
+  .event-list {
+    padding: 40px 0;
+  }
+
+  .col.event-date {
+    width: 20%;
+  }
+
+  .col.event-details {
+    width: 60%;
+  }
+
+  .col.event-tix {
+    width: 20%;
+  }
+
+  .event-meta-titles {
+    color: $gun-metal;
+    font-family: $montserrat;
+    font-weight: 400;
+    padding: 0 0 20px;
+  }
+
+  .event {
+    padding: 0 0 40px;
+  }
+
+  .event.free {
+    background: $baby-blue;
+    margin: 0 0 40px;
+    padding: 60px 0;
+
+    ul {
+      border-left: 3px solid $dark-grey;
+      line-height: 40px;
+      margin: 20px 0;
+      padding: 0 0 0 20px;
+    }
+
+    li {
+      font-size: .9rem;
+      font-weight: 600;
+    }
+  }
+
+  .event-title {
+    font-weight: 600;
+  }
+
+  .event-location {
+    color: $gun-metal;
+    font-size: .6rem;
+    line-height: 17px;
+    padding: 0 0 7px;
+    text-transform: uppercase;
+    width: 80%;
+  }
+
+  .event-description {
+    width: 80%;
+  }
+
+  .event-link {
+    color: $dark-grey;
+
+    &:after {
+      background: url(assets/link-highlight.svg);
+      content: '';
+      height: 5px;
+      width: 64px;
+      position: absolute;
+        top: 19px;
+        left: -6px;
+    }
+  }
+}
+
+.event-feedback-container {
+  flex-flow: column;
+  margin: 0 auto;
+  padding: 0 0 60px;
+  width: 60%;
+}
+
+.photo-container {
+  float: left;
+  padding: 0 0 20px;
+}
+
+.photo-preview {
+  background: $dark-grey;
+  height: 60px;
+  width: 90px;
+
+  +.photo-preview {
+    margin: 0 0 0 20px;
+  }
+}
+
+.feedback-container {
+  border-left: 3px solid $dark-grey;
+  margin: 10px 0 0;
+  padding: 0 0 0 20px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: .9rem;
+  padding: 0 0 12px;
+  width: 80%;
+}
+
+.connect-container {
+  flex-flow: row wrap;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.connect-button {
+  color: $dark-grey;
+
+  &:after {
+    background: url(assets/link-highlight.svg);
+    content: '';
+    height: 5px;
+    width: 64px;
+    position: absolute;
+      top: 19px;
+      left: -4px;
+  }
+}
+
+
+
+
+//! FOOTER _____________________________
+//! ____________________________________
+footer.row {
+  background: $gun-metal;
+  color: #FFF;
+  font-weight: 400;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 75px;
+}
+
+.copyright {
+  font-family: $montserrat;
+  font-weight: 400;
+  padding: 28px 0;
+}
+
+.social-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 21px 0;
+  width: 100px;
+}
+
+.social-link {
+  @include box-shadow(1px, 1px, 8px, rgba(51, 84, 124, .4));
+
+  border-radius: 50px;
+  display: inline-block;
+  height: 37px;
+  width: 37px;
+}
+
+.social-link#medium {
+  background: #fff url(assets/medium-logo.png) no-repeat 60% 65%/70%;
+  margin: 0 2% 0 0;
+}
+
+.social-link#twitter {
+  background: #fff url(assets/twitter-logo.png) no-repeat 60% 65%/70%;
+}

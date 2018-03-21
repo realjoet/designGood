@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="5px" viewBox="0 0 64 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>link-highlight</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="designing-intelligence--home" transform="translate(-867.000000, -1807.000000)" fill="#D1EFF9">
+            <path d="M871.61279,1807.25657 C861.280637,1806.9713 871.61279,1810.25879 871.060824,1811.60534 C872.692703,1811.61362 874.134743,1811.72347 874.924585,1811.88166 C876.47009,1811.90303 928.34841,1812.06312 929.69299,1811.97239 C933.269913,1811.84139 928.313306,1808.11552 928.844025,1807.25657 C925.810291,1807.15186 886.249815,1806.7357 871.61279,1807.25657 Z" id="link-highlight"></path>
+        </g>
+    </g>
+</svg>
