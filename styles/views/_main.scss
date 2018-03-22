@@ -64,12 +64,11 @@ section.welcome {
 
 
 
-
 //! ABOUT SECTION ______________________
 //! ____________________________________
 
 
-.get-involved {
+#get-involved {
   margin: 20px 0 0;
 }
 
@@ -159,14 +158,7 @@ section.welcome {
 }
 
 .event-rsvp {
-  color: $goodBlack;
   margin: 8px 0 60px;
-  text-decoration: none;
-  transition: linear .3s;
-
-  &:hover {
-    color: #fff;
-  }
 }
 
 .event-rsvp.private {

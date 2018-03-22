@@ -152,12 +152,14 @@ a {
 .button {
   border: solid 1px #2d2d2d;
   border-radius: 2px;
+  color: #2d2d2d;
   cursor: pointer;
   float: left;
   font-size: 13px;
   margin: 5px 0;
   padding: 8px 0;
   text-align: center;
+  text-decoration: none;
   transition: .3s linear; }
   .button:hover {
     background: #2d2d2d;
@@ -214,7 +216,7 @@ section.welcome {
   text-align: center;
   width: 100%; }
 
-.get-involved {
+#get-involved {
   margin: 20px 0 0; }
 
 .book-display {
@@ -278,12 +280,7 @@ section.welcome {
   text-align: justify; }
 
 .event-rsvp {
-  color: #2d2d2d;
-  margin: 8px 0 60px;
-  text-decoration: none;
-  transition: linear .3s; }
-  .event-rsvp:hover {
-    color: #fff; }
+  margin: 8px 0 60px; }
 
 .event-rsvp.private {
   background: #2d2d2d;

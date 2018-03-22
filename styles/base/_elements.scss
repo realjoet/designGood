@@ -37,10 +37,7 @@
   padding: 0;
   width: 100%;
 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include background-cover;
 }
 
 #cali-city {
@@ -52,18 +49,20 @@
 }
 
 .button {
-  border: solid 1px #2d2d2d;
+  border: solid 1px $goodBlack;
   border-radius: 2px;
+  color: $goodBlack;
   cursor: pointer;
   float: left;
   font-size: 13px;
   margin: 5px 0;
   padding: 8px 0;
   text-align: center;
+  text-decoration: none;
   transition: .3s linear;
 
   &:hover {
-    background: #2d2d2d;
+    background: $goodBlack;
     color: #fff;
   }
 }
