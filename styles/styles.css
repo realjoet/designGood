@@ -299,32 +299,22 @@ footer.row {
   padding: 0 75px; }
 
 .copyright {
+  float: left;
   font-family: 'didonesque-roman';
   font-weight: 400;
-  padding: 28px 0; }
+  padding: 28px 0;
+  width: 80px; }
 
 .social-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 21px 0;
-  width: 100px; }
+  float: right;
+  font-size: 10px;
+  padding: 28px 0;
+  text-align: right;
+  width: 200px; }
 
 .social-link {
-  -webkit-box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
-  -moz-box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
-  box-shadow: 1px 1px 8px rgba(51, 84, 124, 0.4);
-  border-radius: 50px;
-  display: inline-block;
-  height: 37px;
-  width: 37px; }
-
-.social-link#medium {
-  background: #fff url(assets/medium-logo.png) no-repeat 60% 65%/70%;
-  margin: 0 2% 0 0; }
-
-.social-link#twitter {
-  background: #fff url(assets/twitter-logo.png) no-repeat 60% 65%/70%; }
+  color: #fff;
+  padding: 0 0 0 10px; }
 
 @media (max-width: 786px) {
   .section-title {
