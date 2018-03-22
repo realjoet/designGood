@@ -150,9 +150,9 @@ a {
   background: url(../images/beach-scene.jpg) no-repeat center center fixed; }
 
 .button {
-  border: solid 1px #2d2d2d;
+  border: solid 1px #1e1e1e;
   border-radius: 2px;
-  color: #2d2d2d;
+  color: #1e1e1e;
   cursor: pointer;
   float: left;
   font-size: 13px;
@@ -162,7 +162,7 @@ a {
   text-decoration: none;
   transition: .3s linear; }
   .button:hover {
-    background: #2d2d2d;
+    background: #1e1e1e;
     color: #fff; }
 
 section {
@@ -170,7 +170,7 @@ section {
   width: 100%; }
 
 .container {
-  color: #2d2d2d;
+  color: #1e1e1e;
   display: flex;
   flex-flow: row wrap;
   font-family: "Montserrat", sans-serif;
@@ -182,7 +182,7 @@ section {
   width: 400px; }
 
 .vertial-line {
-  border: 0.5px solid #2d2d2d;
+  border: 0.5px solid #1e1e1e;
   height: 700px;
   position: absolute;
   top: 300px;
@@ -190,7 +190,7 @@ section {
   width: 1px; }
 
 .vertial-line2 {
-  border: 0.5px solid #2d2d2d;
+  border: 0.5px solid #1e1e1e;
   height: 1200px;
   position: absolute;
   top: 2000px;
@@ -201,7 +201,7 @@ section.welcome {
   padding: 160px 0; }
 
 .hero-title {
-  color: #2d2d2d;
+  color: #1e1e1e;
   font-family: 'noe-display';
   font-weight: 800;
   font-size: 120px;
@@ -230,7 +230,7 @@ section.welcome {
     text-align: justify; }
 
 .quote.row {
-  background: #2d2d2d;
+  background: #1e1e1e;
   color: #fff;
   text-align: center; }
 
@@ -283,12 +283,12 @@ section.welcome {
   margin: 8px 0 60px; }
 
 .event-rsvp.private {
-  background: #2d2d2d;
+  background: #1e1e1e;
   color: #fff;
   cursor: default; }
 
 footer.row {
-  background: #2d2d2d;
+  background: #1e1e1e;
   color: #FFF;
   font-weight: 400;
   height: 80px;
