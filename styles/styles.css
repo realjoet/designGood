@@ -35,7 +35,7 @@ My globals file probably needs something from all three of the previously import
   font-style: normal; }
 @font-face {
   font-family: 'noe-display';
-  src: url("assets/didonesque-roman.otf") format("otf");
+  src: url("assets/noe-display-bold.eot") format("eot"), url("assets/noe-display-bold.woff") format("woff"), url("assets/noe-display-bold.otf") format("otf");
   font-weight: normal;
   font-style: normal; }
 /* http://meyerweb.com/eric/tools/css/reset/
