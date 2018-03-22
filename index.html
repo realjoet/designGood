@@ -43,6 +43,7 @@
 
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -96,12 +97,24 @@
                         <li class="learning">Because of this, machines are now capable of monitoring the world.</li>
                         <li class="learning">Because of this, machines are now capable of monitoring the world, consuming data and acting on the information they receive, on our behalf.</li>
                     </ul>
-                    <div class="button buy-now">
+                    <div class="button buy-now" id="preorder">
                         Pre-Order — $30
                     </div>
                     <div class="button buy-now">
                         Learn More
                     </div>
+
+                    <!-- <form action="your-server-side-code" method="POST">
+                      <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_R3xxK8GTuuvQzbOPMp311mST"
+                        data-amount="3000"
+                        data-name="Demo Site"
+                        data-description="Widget"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto">
+                      </script>
+                    </form> -->
                 </div>
             </section>
             <section class="sectional-image row" id="section-dos">
@@ -245,12 +258,31 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script>
-            $(function() {
-              $('.not-available').click(function(){
-                alert("This chapter isn't available yet, but sign up for the waitlist by clicking 'Join Waitlist' and you'll be first to know when it is!")
-              });
+            var handler = StripeCheckout.configure({
+              key: 'pk_test_R3xxK8GTuuvQzbOPMp311mST',
+              image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+              locale: 'auto',
+              token: function(token) {
+                // You can access the token ID with `token.id`.
+                // Get the token ID to your server-side code for use.
+              }
             });
-        </script>
+
+            document.getElementById('preorder').addEventListener('click', function(e) {
+              // Open Checkout with further options:
+              handler.open({
+                name: 'Automating Humanity',
+                description: 'Book on preorder',
+                amount: 3000
+              });
+              e.preventDefault();
+            });
+
+            // Close Checkout on page navigation:
+            window.addEventListener('popstate', function() {
+              handler.close();
+            });
+            </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
