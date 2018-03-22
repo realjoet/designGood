@@ -12,6 +12,12 @@ section {
   font-size: 1rem;
 }
 
+.inner-section-container{
+  margin: 0 auto;
+  width: 400px;
+}
+
+
 .vertial-line {
   border: .5px solid $goodBlack;
   height: 700px;
@@ -56,10 +62,6 @@ section.welcome {
   width: 100%;
 }
 
-.get-involved {
-  margin: 20px 0 0;
-}
-
 
 
 
@@ -67,14 +69,15 @@ section.welcome {
 //! ____________________________________
 
 
-
+.get-involved {
+  margin: 20px 0 0;
+}
 
 //! BOOK SECTION ______________________
 //! ____________________________________
 .book-display {
   align-items: center;
   margin: 20px auto;
-  width: 400px;
 }
 
 .what-you-learn {
@@ -128,7 +131,6 @@ section.welcome {
 .event-container {
   flex-flow: column;
   padding: 30px 0;
-  width: 400px;
 }
 
 .event-title {
@@ -171,10 +173,6 @@ section.welcome {
     background: $goodBlack;
     color: #fff;
     cursor: default;
-}
-
-.connect-container {
-  width: 400px;
 }
 
 

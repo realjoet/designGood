@@ -29,7 +29,6 @@
   line-height: 18px;
   margin: 0 auto;
   text-align: justify;
-  width: 400px;
 }
 
 .sectional-image {
@@ -44,13 +43,12 @@
   background-size: cover;
 }
 
-.sectional-image.cali-city {
+#cali-city {
   background: url(../images/cali-city.jpg) no-repeat center center fixed;
 }
 
-.inner-section-container{
-  margin: 0 auto;
-  width: 400px;
+#section-dos {
+  background: url(../images/beach-scene.jpg) no-repeat center center fixed;
 }
 
 .button {
@@ -63,7 +61,6 @@
   padding: 8px 0;
   text-align: center;
   transition: .3s linear;
-  width: 400px;
 
   &:hover {
     background: #2d2d2d;
