@@ -4,7 +4,7 @@ section {
 }
 
 .container {
-  color: $dark-grey;
+  color: $goodBlack;
   display: flex;
   flex-flow: row wrap;
   font-family: $montserrat;
@@ -12,59 +12,52 @@ section {
   font-size: 1rem;
 }
 
+.vertial-line {
+  border: .5px solid $goodBlack;
+  height: 700px;
+  position: absolute;
+    top: 300px;
+    left: 90%;
+  width: 1px;
+}
+
+.vertial-line2 {
+  border: .5px solid $goodBlack;
+  height: 1200px;
+  position: absolute;
+    top: 2000px;
+    left: 10%;
+  width: 1px;
+}
 
 
-//! TABLE OF CONTENTS __________________
+
+//! WELCOME __________________
 //! ____________________________________
-
-.toc {
-
+section.welcome {
+  padding: 160px 0;
 }
 
-.toc--book-preview {
-  width: 50%;
-
-  .cover-wrapper {
-    margin: 0 auto;
-    width: 400px
-  }
-
-  .book-cover {
-    width: 400px;
-  }
-}
-
-.toc--list-section {
-  width: 50%;
-
-  .section-title {
-    text-align: left;
-  }
-
-  .toc-list {
-    padding: 0 0 30px;
-  }
-
-  .chapter-download-icon {
-    float: right;
-
-    &.not-available {
-      opacity: .2;
-    }
-  }
-}
-
-.get-book-container {
-  display: flex;
+.hero-title {
+  color: $goodBlack;
+  font-family: 'noe-display';
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 120px;
+  padding: 0 0 30px;
+  text-align: center;
   width: 100%;
 }
 
-.hero-nav-link--get-book {
-  background: $gun-metal;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: 400;
-  padding: 15px 30px;
+.hero-description {
+  font-size: 21px;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+}
+
+.get-involved {
+  margin: 20px 0 0;
 }
 
 
@@ -73,75 +66,41 @@ section {
 //! ABOUT SECTION ______________________
 //! ____________________________________
 
-.about-section {
-  background: $gun-metal;
-  color: #fff;
-  padding: 80px 0;
 
-  .section-title {
-    color: #fff;
-    margin: 0 auto;
-    padding: 0 0 20px;
-    text-align: left;
-    width: 60%;
-  }
 
-  .book-description {
-    margin: 0 auto;
-    width: 60%;
+
+//! BOOK SECTION ______________________
+//! ____________________________________
+.book-display {
+  align-items: center;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.what-you-learn {
+  list-style-type: disc;
+
+  .learning {
+    padding: 0 0 12px;
+    text-align: justify;
   }
 }
 
-
-
-
-//! INFLUENCERS ________________________
+//! QUOTE SECTION ______________________
 //! ____________________________________
 
-.influencers {
-  justify-content: center;
-
-  .influencer-container {
-    justify-content: space-between;
-    padding: 60px 0 0;
-    width: 100%;
-  }
-
-  .influencer {
-    justify-content: space-around;
-    width: 25%;
-  }
-
-  .influencer-container--inner {
-    margin: 0 auto;
-    padding: 0 0 40px;
-    width: 120px;
-  }
-
-  .influencer--image {
-    background: url(assets/the-face.jpg) no-repeat center 25% / cover;
-    @include background-cover;
-    border-radius: 120px;
-    height: 120px;
-    width: 120px;
-  }
-
-  .influencer-name {
-    color: $dark-grey;
-    font-weight: 600px;
-    text-align: center;
-  }
-
-  .influencer-title {
-    color: #9B9B9B;
-    font-size: .5rem;
-    font-weight: 300;
-    line-height: 17px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.quote.row {
+  background: $goodBlack;
+  color: #fff;
+  text-align: center;
 }
 
+.section-quote {
+  font-family: $noeDisplay;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 50px auto;
+}
 
 
 
@@ -149,148 +108,80 @@ section {
 //! ____________________________________
 
 .events {
-  justify-content: center;
-
-  .event-list {
-    padding: 40px 0;
-  }
-
-  .col.event-date {
-    width: 20%;
-  }
-
-  .col.event-details {
-    width: 60%;
-  }
-
-  .col.event-tix {
-    width: 20%;
-  }
-
-  .event-meta-titles {
-    color: $gun-metal;
-    font-family: $montserrat;
-    font-weight: 400;
-    padding: 0 0 20px;
-  }
-
-  .event {
-    padding: 0 0 40px;
-  }
-
-  .event.free {
-    background: $baby-blue;
-    margin: 0 0 40px;
-    padding: 60px 0;
-
-    ul {
-      border-left: 3px solid $dark-grey;
-      line-height: 40px;
-      margin: 20px 0;
-      padding: 0 0 0 20px;
-    }
-
-    li {
-      font-size: .9rem;
-      font-weight: 600;
-    }
-  }
-
-  .event-title {
-    font-weight: 600;
-  }
-
-  .event-location {
-    color: $gun-metal;
-    font-size: .6rem;
-    line-height: 17px;
-    padding: 0 0 7px;
-    text-transform: uppercase;
-    width: 80%;
-  }
-
-  .event-description {
-    width: 80%;
-  }
-
-  .event-link {
-    color: $dark-grey;
-
-    &:after {
-      background: url(assets/link-highlight.svg);
-      content: '';
-      height: 5px;
-      width: 64px;
-      position: absolute;
-        top: 19px;
-        left: -6px;
-    }
-  }
+  flex-direction: column;
 }
 
-.event-feedback-container {
-  flex-flow: column;
-  margin: 0 auto;
-  padding: 0 0 60px;
-  width: 60%;
-}
-
-.photo-container {
+.events.section-title {
   float: left;
-  padding: 0 0 20px;
+  width: 400px;
 }
 
-.photo-preview {
-  background: $dark-grey;
-  height: 60px;
-  width: 90px;
+.events.section-description {
+  float: left;
+  width: 400px;
+}
 
-  +.photo-preview {
-    margin: 0 0 0 20px;
+.event-list {
+  padding: 20px 0 0;
+}
+
+.event-container {
+  flex-flow: column;
+  padding: 30px 0;
+  width: 400px;
+}
+
+.event-title {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 0 0 8px;
+}
+
+.event-date {
+  float: left;
+  font-size: 10px;
+  width: 26px;
+}
+
+.event-location {
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.event-description {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 10px 0 10px;
+  text-align: justify;
+}
+
+.event-rsvp {
+  color: $goodBlack;
+  margin: 8px 0 60px;
+  text-decoration: none;
+  transition: linear .3s;
+
+  &:hover {
+    color: #fff;
   }
 }
 
-.feedback-container {
-  border-left: 3px solid $dark-grey;
-  margin: 10px 0 0;
-  padding: 0 0 0 20px;
-}
-
-.feedback {
-  font-style: italic;
-  font-size: .9rem;
-  padding: 0 0 12px;
-  width: 80%;
+.event-rsvp.private {
+    background: $goodBlack;
+    color: #fff;
+    cursor: default;
 }
 
 .connect-container {
-  flex-flow: row wrap;
-  font-weight: 600;
-  justify-content: space-between;
-  width: 60%;
+  width: 400px;
 }
-
-.connect-button {
-  color: $dark-grey;
-
-  &:after {
-    background: url(assets/link-highlight.svg);
-    content: '';
-    height: 5px;
-    width: 64px;
-    position: absolute;
-      top: 19px;
-      left: -4px;
-  }
-}
-
-
 
 
 //! FOOTER _____________________________
 //! ____________________________________
 footer.row {
-  background: $gun-metal;
+  background: $goodBlack;
   color: #FFF;
   font-weight: 400;
   height: 80px;
@@ -299,7 +190,7 @@ footer.row {
 }
 
 .copyright {
-  font-family: $montserrat;
+  font-family: 'didonesque-roman';
   font-weight: 400;
   padding: 28px 0;
 }

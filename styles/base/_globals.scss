@@ -19,7 +19,10 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 13px;
+  line-height: 18px;
   vertical-align: baseline;
+  width: 100%;
 
   /* Set to border-box to keep consistentcy across width/positioning adjustments */
   @include box-sizing(border-box);
@@ -30,13 +33,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: flex;
   flex-flow: row wrap;
-}
-
-body {
-  /* Set to 62.5% so that 1rem = 10pt font */
-  font-size: 62.5%;
-  font: inherent;
-  line-height: 28px;
 }
 
 ol, ul {
@@ -59,8 +55,8 @@ table {
 }
 
 a {
-  position: relative;
-  text-decoration: none;
+  color: #2852fa;
+  text-decoration: underline;
 }
 
 .clearfix:after {
