@@ -1,0 +1,69 @@
+.ah-page {
+  .sectional-image {
+    height: 500px;
+    padding: 0;
+    width: 100%;
+
+    @include background-cover;
+
+    &#ah-product-preview {
+      background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
+      background-color: #b0b7c5;
+    }
+  }
+
+  //! INTRO SECTION ______________________
+  //! ____________________________________
+
+  .what-you-learn {
+    padding: 20px 0 0;
+
+    .wyl--learning {
+      padding: 0 0 12px;
+      text-align: justify;
+    }
+  }
+
+  //! INTRO SECTION ______________________
+  //! ____________________________________
+
+  .sample-quotes {
+    list-style-image: url(../images/quote-marks.png);
+    padding: 20px 0 0;
+
+    .sample-quotes--quote {
+      padding: 0 0 8px;
+      text-align: justify;
+    }
+
+    .sample-quotes--person {
+      padding: 0 0 20px;
+    }
+  }
+
+  //! TABLE OF CONTENTS SECTION ______________________
+  //! ____________________________________
+
+  .toc-container {
+    padding: 20px 0 0;
+  }
+
+  .toc-outline {
+    padding: 0 0 20px;
+
+    .toc-outline--section-title {
+      padding: 0 0 12px;
+      text-align: justify;
+    }
+
+    .toc-outline--chapter-title {
+      padding: 0;
+      text-align: justify;
+    }
+  }
+
+  .fine-print {
+    float: left;
+    padding: 10px 0 0;
+  }
+}

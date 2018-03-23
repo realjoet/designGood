@@ -117,14 +117,18 @@ a {
 
 .section-header {
   font-family: "noe-display", serif;
-  font-size: 21px;
-  padding: 0 0 10px;
+  font-size: 34px;
+  padding: 0 0 18px;
   text-align: left; }
 
 .section-h3 {
   font-family: "noe-display", serif;
   font-size: 21px;
   margin: 10px 0 6px; }
+
+.wyl--list-title {
+  font-weight: 800;
+  padding: 0 0 10px; }
 
 .section-description {
   align-items: center;
@@ -135,19 +139,17 @@ a {
 
 .sectional-image {
   background-position: center;
-  height: 400px;
+  height: 500px;
   padding: 0;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-#cali-city {
-  background: url(../images/cali-city.jpg) no-repeat center center fixed; }
-
-#section-dos {
-  background: url(../images/beach-scene.jpg) no-repeat center center fixed; }
+  .sectional-image#cali-city {
+    background: url(../images/cali-city.jpg) no-repeat center center fixed; }
+  .sectional-image#section-dos {
+    background: url(../images/beach-scene.jpg) no-repeat center center fixed; }
 
 .button {
   border: solid 1px #1e1e1e;
@@ -164,6 +166,9 @@ a {
   .button:hover {
     background: #1e1e1e;
     color: #fff; }
+  .button.hero-button {
+    margin: 0 auto;
+    width: 400px; }
 
 section {
   padding: 80px 75px;
@@ -185,7 +190,7 @@ section {
   border: 0.5px solid #1e1e1e;
   height: 700px;
   position: absolute;
-  top: 300px;
+  top: 350px;
   left: 90%;
   width: 1px; }
 
@@ -193,7 +198,7 @@ section {
   border: 0.5px solid #1e1e1e;
   height: 1200px;
   position: absolute;
-  top: 2000px;
+  top: 2150px;
   left: 10%;
   width: 1px; }
 
@@ -225,7 +230,7 @@ section.welcome {
 
 .what-you-learn {
   list-style-type: disc; }
-  .what-you-learn .learning {
+  .what-you-learn .wyl--learning {
     padding: 0 0 12px;
     text-align: justify; }
 
@@ -312,6 +317,44 @@ footer.row {
 .social-link {
   color: #fff;
   padding: 0 0 0 10px; }
+
+.ah-page .sectional-image {
+  height: 500px;
+  padding: 0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .ah-page .sectional-image#ah-product-preview {
+    background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
+    background-color: #b0b7c5; }
+.ah-page .what-you-learn {
+  padding: 20px 0 0; }
+  .ah-page .what-you-learn .wyl--learning {
+    padding: 0 0 12px;
+    text-align: justify; }
+.ah-page .sample-quotes {
+  list-style-image: url(../images/quote-marks.png);
+  padding: 20px 0 0; }
+  .ah-page .sample-quotes .sample-quotes--quote {
+    padding: 0 0 8px;
+    text-align: justify; }
+  .ah-page .sample-quotes .sample-quotes--person {
+    padding: 0 0 20px; }
+.ah-page .toc-container {
+  padding: 20px 0 0; }
+.ah-page .toc-outline {
+  padding: 0 0 20px; }
+  .ah-page .toc-outline .toc-outline--section-title {
+    padding: 0 0 12px;
+    text-align: justify; }
+  .ah-page .toc-outline .toc-outline--chapter-title {
+    padding: 0;
+    text-align: justify; }
+.ah-page .fine-print {
+  float: left;
+  padding: 10px 0 0; }
 
 @media (max-width: 786px) {
   .section-title {

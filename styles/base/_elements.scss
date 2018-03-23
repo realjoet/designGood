@@ -12,8 +12,8 @@
 
 .section-header {
   font-family: $noeDisplay;
-  font-size: 21px;
-  padding: 0 0 10px;
+  font-size: 34px;
+  padding: 0 0 18px;
   text-align: left;
 }
 
@@ -21,6 +21,11 @@
   font-family: $noeDisplay;
   font-size: 21px;
   margin: 10px 0 6px;
+}
+
+.wyl--list-title {
+  font-weight: 800;
+  padding: 0 0 10px;
 }
 
 .section-description {
@@ -33,19 +38,19 @@
 
 .sectional-image {
   background-position: center;
-  height: 400px;
+  height: 500px;
   padding: 0;
   width: 100%;
 
   @include background-cover;
-}
 
-#cali-city {
-  background: url(../images/cali-city.jpg) no-repeat center center fixed;
-}
+  &#cali-city {
+    background: url(../images/cali-city.jpg) no-repeat center center fixed;
+  }
 
-#section-dos {
-  background: url(../images/beach-scene.jpg) no-repeat center center fixed;
+  &#section-dos {
+    background: url(../images/beach-scene.jpg) no-repeat center center fixed;
+  }
 }
 
 .button {
@@ -64,5 +69,10 @@
   &:hover {
     background: $goodBlack;
     color: #fff;
+  }
+
+  &.hero-button {
+    margin: 0 auto;
+    width: 400px;
   }
 }

@@ -22,7 +22,7 @@ section {
   border: .5px solid $goodBlack;
   height: 700px;
   position: absolute;
-    top: 300px;
+    top: 350px;
     left: 90%;
   width: 1px;
 }
@@ -31,7 +31,7 @@ section {
   border: .5px solid $goodBlack;
   height: 1200px;
   position: absolute;
-    top: 2000px;
+    top: 2150px;
     left: 10%;
   width: 1px;
 }
@@ -82,7 +82,7 @@ section.welcome {
 .what-you-learn {
   list-style-type: disc;
 
-  .learning {
+  .wyl--learning {
     padding: 0 0 12px;
     text-align: justify;
   }
