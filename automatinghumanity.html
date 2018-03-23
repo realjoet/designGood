@@ -157,7 +157,8 @@
                         <ul class="toc-outline">
                             <h3 class="toc-outline--section-title">Other Information</h3>
                             <li class="toc-outline--chapter-title">Page Length: 180 pages</li>
-                            <li class="toc-outline--chapter-title">Estimated Read Time: 12 hours</li>
+                            <li class="toc-outline--chapter-title">Cover Design: <a href="https://www.donottouch.ca/" target="blank">Jessie Sohpaul</a></li>
+                            <li class="toc-outline--chapter-title">Internal Art: <a href="http://beeple-crap.com/" target="blank">Beeple</a></li>
                         </ul>
                     </div>
                     <a class="button" id="book-preorder" href="#">Pre-Order Book — $30</a>
@@ -196,12 +197,22 @@
               }
             });
 
-            document.getElementById('preorder').addEventListener('click', function(e) {
+            document.getElementById('book-preorder').addEventListener('click', function(e) {
               // Open Checkout with further options:
               handler.open({
                 name: 'Automating Humanity',
                 description: 'Book on preorder',
                 amount: 3000
+              });
+              e.preventDefault();
+            });
+
+            document.getElementById('eBook-preorder').addEventListener('click', function(e) {
+              // Open Checkout with further options:
+              handler.open({
+                name: 'Automating Humanity',
+                description: 'Book on preorder',
+                amount: 500
               });
               e.preventDefault();
             });
