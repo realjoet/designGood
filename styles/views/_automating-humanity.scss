@@ -1,6 +1,5 @@
 .ah-page {
   .sectional-image {
-    height: 500px;
     padding: 0;
     width: 100%;
 
@@ -10,6 +9,22 @@
       background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
       background-color: #b0b7c5;
     }
+  }
+
+  .vertical-line3 {
+    @extend %vertical-line--right;
+
+    height: 850px;
+    position: absolute;
+      top: 350px;
+  }
+
+  .vertical-line4 {
+    @extend %vertical-line--left;
+
+    height: 1350px;
+    position: absolute;
+      top: 2850px;
   }
 
   //! INTRO SECTION ______________________
@@ -29,7 +44,6 @@
 
   .sample-quotes {
     list-style-image: url(../images/quote-marks.png);
-    padding: 20px 0 0;
 
     .sample-quotes--quote {
       padding: 0 0 8px;
@@ -45,7 +59,6 @@
   //! ____________________________________
 
   .toc-container {
-    padding: 20px 0 0;
   }
 
   .toc-outline {
@@ -53,12 +66,10 @@
 
     .toc-outline--section-title {
       padding: 0 0 12px;
-      text-align: justify;
     }
 
     .toc-outline--chapter-title {
       padding: 0;
-      text-align: justify;
     }
   }
 

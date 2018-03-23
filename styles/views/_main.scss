@@ -18,22 +18,20 @@ section {
 }
 
 
-.vertial-line {
-  border: .5px solid $goodBlack;
+.vertical-line {
+  @extend %vertical-line--right;
+
   height: 700px;
   position: absolute;
     top: 350px;
-    left: 90%;
-  width: 1px;
 }
 
-.vertial-line2 {
-  border: .5px solid $goodBlack;
+.vertical-line2 {
+  @extend %vertical-line--left;
+  
   height: 1200px;
   position: absolute;
-    top: 2150px;
-    left: 10%;
-  width: 1px;
+    top: 2200px;
 }
 
 

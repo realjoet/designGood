@@ -117,7 +117,8 @@ a {
 
 .section-header {
   font-family: "noe-display", serif;
-  font-size: 34px;
+  font-size: 32px;
+  line-height: 42px;
   padding: 0 0 18px;
   text-align: left; }
 
@@ -138,7 +139,6 @@ a {
   text-align: justify; }
 
 .sectional-image {
-  background-position: center;
   height: 500px;
   padding: 0;
   width: 100%;
@@ -170,6 +170,18 @@ a {
     margin: 0 auto;
     width: 400px; }
 
+.vertical-line, .ah-page .vertical-line3 {
+  border: 0.5px solid #1e1e1e;
+  position: absolute;
+  left: 90%;
+  width: 1px; }
+
+.vertical-line2, .ah-page .vertical-line4 {
+  border: 0.5px solid #1e1e1e;
+  position: absolute;
+  left: 10%;
+  width: 1px; }
+
 section {
   padding: 80px 75px;
   width: 100%; }
@@ -186,21 +198,15 @@ section {
   margin: 0 auto;
   width: 400px; }
 
-.vertial-line {
-  border: 0.5px solid #1e1e1e;
+.vertical-line {
   height: 700px;
   position: absolute;
-  top: 350px;
-  left: 90%;
-  width: 1px; }
+  top: 350px; }
 
-.vertial-line2 {
-  border: 0.5px solid #1e1e1e;
+.vertical-line2 {
   height: 1200px;
   position: absolute;
-  top: 2150px;
-  left: 10%;
-  width: 1px; }
+  top: 2200px; }
 
 section.welcome {
   padding: 160px 0; }
@@ -319,7 +325,6 @@ footer.row {
   padding: 0 0 0 10px; }
 
 .ah-page .sectional-image {
-  height: 500px;
   padding: 0;
   width: 100%;
   -webkit-background-size: cover;
@@ -329,29 +334,32 @@ footer.row {
   .ah-page .sectional-image#ah-product-preview {
     background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
     background-color: #b0b7c5; }
+.ah-page .vertical-line3 {
+  height: 850px;
+  position: absolute;
+  top: 350px; }
+.ah-page .vertical-line4 {
+  height: 1350px;
+  position: absolute;
+  top: 2850px; }
 .ah-page .what-you-learn {
   padding: 20px 0 0; }
   .ah-page .what-you-learn .wyl--learning {
     padding: 0 0 12px;
     text-align: justify; }
 .ah-page .sample-quotes {
-  list-style-image: url(../images/quote-marks.png);
-  padding: 20px 0 0; }
+  list-style-image: url(../images/quote-marks.png); }
   .ah-page .sample-quotes .sample-quotes--quote {
     padding: 0 0 8px;
     text-align: justify; }
   .ah-page .sample-quotes .sample-quotes--person {
     padding: 0 0 20px; }
-.ah-page .toc-container {
-  padding: 20px 0 0; }
 .ah-page .toc-outline {
   padding: 0 0 20px; }
   .ah-page .toc-outline .toc-outline--section-title {
-    padding: 0 0 12px;
-    text-align: justify; }
+    padding: 0 0 12px; }
   .ah-page .toc-outline .toc-outline--chapter-title {
-    padding: 0;
-    text-align: justify; }
+    padding: 0; }
 .ah-page .fine-print {
   float: left;
   padding: 10px 0 0; }
@@ -365,6 +373,15 @@ footer.row {
   .sectional-image {
     height: 300px; }
 
+  .button.hero-button {
+    width: 340px; }
+
+  .vertical-line, .ah-page .vertical-line3 {
+    left: 95%; }
+
+  .vertical-line2, .ah-page .vertical-line4 {
+    left: 5%; }
+
   section {
     padding: 80px 0; }
 
@@ -372,19 +389,13 @@ footer.row {
     margin: 0 auto;
     width: 340px; }
 
-  .vertial-line {
+  .vertical-line {
     height: 500px;
-    position: absolute;
-    top: 250px;
-    left: 90%;
-    width: 1px; }
+    top: 250px; }
 
-  .vertial-line2 {
-    height: 440px;
-    position: absolute;
-    top: 2540px;
-    left: 10%;
-    width: 1px; }
+  .vertical-line2 {
+    height: 420px;
+    top: 2570px; }
 
   .hero-title {
     font-size: 60px;
@@ -400,6 +411,14 @@ footer.row {
     width: 340px; }
 
   footer.row {
-    padding: 0; } }
+    padding: 0; }
+
+  .ah-page .vertical-line3 {
+    display: none; }
+  .ah-page .vertical-line4 {
+    height: 380px;
+    top: 2950px; }
+  .ah-page .sectional-image#ah-product-preview {
+    background-size: 600px; } }
 
 /*# sourceMappingURL=styles.css.map */
