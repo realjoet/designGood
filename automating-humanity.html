@@ -44,6 +44,14 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://checkout.stripe.com/checkout.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116302594-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116302594-1');
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -57,7 +65,7 @@
             <div class="vertical-line4"></div>
             <section class="welcome row">
                 <h1 class="hero-title">Automating <br />Humanity</h1>
-                <a class="button hero-button" href="#book-preorder">Buy Now</a>
+                <a class="button hero-button" href="#buy-now-hook">Buy Now</a>
             </section>
             <section class="sectional-image row" id="ah-product-preview">
             </section>
@@ -159,10 +167,11 @@
                             <li class="toc-outline--chapter-title">Page Length: 180 pages</li>
                             <li class="toc-outline--chapter-title">Cover Design: <a href="https://www.donottouch.ca/" target="blank">Jessie Sohpaul</a></li>
                             <li class="toc-outline--chapter-title">Internal Art: <a href="http://beeple-crap.com/" target="blank">Beeple</a></li>
+                            <li class="toc-outline--chapter-title"><strong>Free Shipping</strong></li>
                         </ul>
                     </div>
-                    <a class="button" id="book-preorder" href="#">Pre-Order Book — $30</a>
-                    <a class="button" id="eBook-preorder" href="#">Pre-Order eBook — $5</a>
+                    <a class="button" id="buy-now-hook" href="https://realjoet.typeform.com/to/vidhMW" target="_blank">Pre-Order Book — $30</a>
+                    <a class="button" id="TODO" href="https://realjoet.typeform.com/to/cnMzei" target="_blank">Pre-Order eBook — $5</a>
                     <a class="button" id="ah-sample" href="#">Download Sample</a>
 
                     <p class="fine-print">If you have interest in becoming an educational sponsor or if you would like to get access to special prices for educational purposes, please email <a href="mailto: yo@realjoet.me" target="_blank" class="connect-button" id="book-me">
@@ -230,7 +239,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-116302594-1','auto');ga('send','pageview');
         </script>
     </body>
 </html>
