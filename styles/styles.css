@@ -158,7 +158,7 @@ a {
   cursor: pointer;
   float: left;
   font-size: 13px;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 8px 0;
   text-align: center;
   text-decoration: none;
@@ -169,6 +169,10 @@ a {
   .button.hero-button {
     margin: 0 auto;
     width: 400px; }
+  .button.middle-button {
+    margin: 0 0 10px; }
+  .button.last-button {
+    margin: 0; }
 
 .vertical-line, .ah-page .vertical-line3 {
   border: 0.5px solid #1e1e1e;
@@ -255,9 +259,6 @@ section.welcome {
   font-weight: 200;
   text-align: center;
   width: 100%; }
-
-#get-involved {
-  margin: 20px 0 0; }
 
 .book-display {
   align-items: center;

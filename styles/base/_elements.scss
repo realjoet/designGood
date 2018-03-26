@@ -60,7 +60,7 @@
   cursor: pointer;
   float: left;
   font-size: 13px;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 8px 0;
   text-align: center;
   text-decoration: none;
@@ -74,6 +74,14 @@
   &.hero-button {
     margin: 0 auto;
     width: 400px;
+  }
+
+  &.middle-button {
+    margin: 0 0 10px;
+  }
+
+  &.last-button {
+    margin: 0;
   }
 }
 
