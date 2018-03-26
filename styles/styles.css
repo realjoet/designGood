@@ -169,6 +169,8 @@ a {
   .button.hero-button {
     margin: 0 auto;
     width: 400px; }
+  .button.first-button {
+    margin-top: 20px; }
   .button.middle-button {
     margin: 0 0 10px; }
   .button.last-button {
