@@ -370,6 +370,73 @@ section.welcome {
   float: left;
   padding: 10px 0 0; }
 
+.inner-section-container--wide, .foundation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0; }
+
+.inner-section--card-container {
+  width: 31%; }
+
+.inner-section--card-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.inner-section--card-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
+
+.foundation-container {
+  width: 31%; }
+
+.foundation-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.foundation-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
+
+.donation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0; }
+
+.donation-item-container {
+  width: 31%; }
+
+.donation-item-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.foundation-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
+
+.foundation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0; }
+
+.foundation-container {
+  width: 31%; }
+
+.foundation-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.foundation-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
+
 @media (max-width: 786px) {
   .section-title {
     font-size: 46px;

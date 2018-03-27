@@ -1,0 +1,105 @@
+//! GET INVOLVED PAGE ELEMENTS SECTION ______________________
+//! ____________________________________
+
+.inner-section-container--wide {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.inner-section--card-container {
+  width: 31%;
+}
+
+.inner-section--card-image {
+  background: $goodBlack;
+  height: 200px;
+  width: 100%;
+}
+
+.inner-section--card-name {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 20px 0 8px;
+}
+
+.inner-section--card-description {
+
+}
+
+
+//! FOUNDATION SECTION ______________________
+//! ____________________________________
+
+.foundation-list {
+  @extend .inner-section-container--wide 
+}
+
+.foundation-container {
+  width: 31%;
+}
+
+.foundation-image {
+  background: $goodBlack;
+  height: 200px;
+  width: 100%;
+}
+
+.foundation-name {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 20px 0 8px;
+}
+
+
+
+//! DONATION SECTION ______________________
+//! ____________________________________
+
+.donation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.donation-item-container {
+  width: 31%;
+}
+
+.donation-item-image {
+  background: $goodBlack;
+  height: 200px;
+  width: 100%;
+}
+
+.foundation-name {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 20px 0 8px;
+}
+
+
+//! DESIGNER LIST SECTION ______________________
+//! ____________________________________
+
+.foundation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.foundation-container {
+  width: 31%;
+}
+
+.foundation-image {
+  background: $goodBlack;
+  height: 200px;
+  width: 100%;
+}
+
+.foundation-name {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 20px 0 8px;
+}
