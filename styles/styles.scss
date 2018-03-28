@@ -17,6 +17,10 @@ My globals file probably needs something from all three of the previously import
 @import "views/automating-humanity";
 @import "views/get-involved";
 
+@media (max-width: 1024px) {
+  @import "tablet/get-involved";
+}
+
 @media (max-width: 786px) {
   @import "mobile/elements";
   @import "mobile/main";

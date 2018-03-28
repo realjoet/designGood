@@ -1,0 +1,24 @@
+//! GET INVOLVED PAGE ELEMENTS SECTION ______________________
+//! ____________________________________
+
+.inner-section-container--wide {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.inner-section-container--card-container {
+  width: 48%;
+}
+
+.inner-section--card-image {
+  background: $goodBlack;
+  height: 200px;
+  width: 100%;
+}
+
+.inner-section--card-name {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 20px 0 8px;
+}

@@ -4,7 +4,7 @@
 .inner-section-container--wide {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .inner-section--card-container {
@@ -23,25 +23,31 @@
   padding: 20px 0 8px;
 }
 
+.inner-section--card-description {
+  text-align: justify;
+}
+
 
 
 //! FOUNDATION SECTION ______________________
 //! ____________________________________
-
+.foundation-container {
+  padding: 0 0 30px;
+}
 
 
 
 //! DONATION SECTION ______________________
 //! ____________________________________
 
+.donation-item-container {
+  padding: 40px 0;
+}
+
 .donation-list {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 60px 0;
-}
-
-.donation-item-container {
-  width: 31%;
 }
 
 .donation-item-image {
