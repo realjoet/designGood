@@ -370,7 +370,7 @@ section.welcome {
   float: left;
   padding: 10px 0 0; }
 
-.inner-section-container--wide, .foundation-list {
+.inner-section-container--wide {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 60px 0; }
@@ -384,19 +384,6 @@ section.welcome {
   width: 100%; }
 
 .inner-section--card-name {
-  font-family: "noe-display", serif;
-  font-size: 21px;
-  padding: 20px 0 8px; }
-
-.foundation-container {
-  width: 31%; }
-
-.foundation-image {
-  background: #1e1e1e;
-  height: 200px;
-  width: 100%; }
-
-.foundation-name {
   font-family: "noe-display", serif;
   font-size: 21px;
   padding: 20px 0 8px; }
