@@ -502,7 +502,7 @@ section.welcome {
 
   .vertical-line2 {
     height: 420px;
-    top: 2660px; }
+    top: 2870px; }
 
   .hero-title {
     font-size: 60px;
@@ -511,7 +511,7 @@ section.welcome {
 
   .hero-description {
     font-size: 13px;
-    font-weight: 300; }
+    font-weight: 400; }
 
   .section-quote {
     font-size: 24px;
@@ -522,7 +522,7 @@ section.welcome {
     display: none; }
   .ah-page .vertical-line4 {
     height: 380px;
-    top: 3070px; }
+    top: 2870px; }
   .ah-page .sectional-image#ah-product-preview {
     background-size: 600px; }
 
