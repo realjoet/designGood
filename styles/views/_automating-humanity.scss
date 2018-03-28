@@ -5,9 +5,13 @@
 
     @include background-cover;
 
-    &#ah-product-preview {
+    &#automating-humanity--section-one-image {
       background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
       background-color: #b0b7c5;
+    }
+
+    &#automating-humanity--section-two-image {
+      background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat center center fixed;
     }
   }
 

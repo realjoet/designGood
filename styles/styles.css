@@ -105,6 +105,10 @@ a {
   width: 100%; }
 
 /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+.inner-section-container {
+  margin: 0 auto;
+  width: 400px; }
+
 .section-title {
   color: #2d2d2d;
   font-family: "noe-display", serif;
@@ -146,9 +150,9 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .sectional-image#cali-city {
+  .sectional-image#page-one--section-one {
     background: url(../images/cali-city.jpg) no-repeat center center fixed; }
-  .sectional-image#section-dos {
+  .sectional-image#page-one--section-two {
     background: url(../images/sea-side-carnival.jpg) no-repeat center center fixed;
     background-size: 100%;
     background-position-y: 5%; }
@@ -220,19 +224,30 @@ footer.row {
   background: #1e1e1e;
   color: #FFF;
   font-weight: 400;
-  height: 80px;
-  justify-content: space-between;
-  padding: 0 75px; }
+  padding: 28px 0;
+  position: sticky;
+  bottom: -80px; }
 
-.copyright {
+.inner-footer-container {
+  margin: 0 auto;
+  width: 90%; }
+
+.design-good-logo {
   float: left;
   font-family: 'didonesque-roman';
   font-weight: 400;
-  padding: 28px 0;
-  width: 80px; }
-  .copyright a {
+  width: 40%; }
+  .design-good-logo a {
     color: #fff;
     text-decoration: none; }
+
+.menu-button {
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  text-align: right;
+  text-decoration: underline;
+  width: 60%; }
 
 .social-container {
   float: right;
@@ -256,10 +271,6 @@ section {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1rem; }
-
-.inner-section-container {
-  margin: 0 auto;
-  width: 400px; }
 
 .vertical-line {
   height: 700px;
@@ -359,9 +370,11 @@ section.welcome {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .ah-page .sectional-image#ah-product-preview {
+  .ah-page .sectional-image#automating-humanity--section-one-image {
     background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
     background-color: #b0b7c5; }
+  .ah-page .sectional-image#automating-humanity--section-two-image {
+    background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat center center fixed; }
 .ah-page .vertical-line3 {
   height: 850px;
   position: absolute;
@@ -543,11 +556,13 @@ section.welcome {
   .ah-page .vertical-line4 {
     height: 380px;
     top: 2890px; }
-  .ah-page .sectional-image#ah-product-preview {
+  .ah-page #automating-humanity--section-one-image {
     background-size: 600px; }
 
   footer.row {
-    padding: 0; }
+    padding: 28px 0;
+    position: sticky;
+    bottom: -80px; }
 
   .inner-section-container--wide {
     margin: 0 auto;

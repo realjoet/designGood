@@ -1,4 +1,9 @@
 /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+.inner-section-container{
+  margin: 0 auto;
+  width: 400px;
+}
+
 .section-title {
   color: #2d2d2d;
   font-family: $noeDisplay;
@@ -44,11 +49,11 @@
 
   @include background-cover;
 
-  &#cali-city {
+  &#page-one--section-one {
     background: url(../images/cali-city.jpg) no-repeat center center fixed;
   }
 
-  &#section-dos {
+  &#page-one--section-two {
     background: url(../images/sea-side-carnival.jpg) no-repeat center center fixed;
     background-size: 100%;
     background-position-y: 5%;

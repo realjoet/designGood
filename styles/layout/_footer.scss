@@ -2,22 +2,35 @@ footer.row {
   background: $goodBlack;
   color: #FFF;
   font-weight: 400;
-  height: 80px;
-  justify-content: space-between;
-  padding: 0 75px;
+  padding: 28px 0;
+  position: sticky;
+    bottom: -80px;
 }
 
-.copyright {
+.inner-footer-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.design-good-logo {
   float: left;
   font-family: 'didonesque-roman';
   font-weight: 400;
-  padding: 28px 0;
-  width: 80px;
+  width: 40%;
 
   a {
     color: #fff;
     text-decoration: none;
   }
+}
+
+.menu-button {
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  text-align: right;
+  text-decoration: underline;
+  width: 60%;
 }
 
 .social-container {
