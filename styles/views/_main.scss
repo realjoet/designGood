@@ -138,10 +138,21 @@ section.welcome {
 
 .event-rsvp {
   margin: 8px 0 60px;
-}
 
-.event-rsvp.private {
-    background: $goodBlack;
-    color: #fff;
-    cursor: default;
+  &.private {
+      background: $goodBlack;
+      color: #fff;
+      cursor: default;
+  }
+
+  &.coming-soon {
+    transition: none;
+
+    &:hover {
+      background: #fff;
+      color: $goodBlack;
+      cursor: default;
+
+    }
+  }
 }

@@ -339,11 +339,16 @@ section.welcome {
 
 .event-rsvp {
   margin: 8px 0 60px; }
-
-.event-rsvp.private {
-  background: #1e1e1e;
-  color: #fff;
-  cursor: default; }
+  .event-rsvp.private {
+    background: #1e1e1e;
+    color: #fff;
+    cursor: default; }
+  .event-rsvp.coming-soon {
+    transition: none; }
+    .event-rsvp.coming-soon:hover {
+      background: #fff;
+      color: #1e1e1e;
+      cursor: default; }
 
 .ah-page .sectional-image {
   padding: 0;
@@ -465,7 +470,7 @@ section.welcome {
     padding: 20px 0 8px; } }
 @media (max-width: 786px) {
   .section-title {
-    font-size: 46px;
+    font-size: 44px;
     line-height: 46px;
     padding: 0 0 20px; }
 
@@ -505,7 +510,8 @@ section.welcome {
     padding: 0 0 15px; }
 
   .hero-description {
-    font-size: 13px; }
+    font-size: 13px;
+    font-weight: 300; }
 
   .section-quote {
     font-size: 24px;
