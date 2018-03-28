@@ -35,6 +35,34 @@
   padding: 0 0 30px;
 }
 
+.foundation-image {
+  // @include background-cover;
+
+  &#code-dot-org {
+      background: url(../images/code-dot-org.jpg);
+  }
+
+  &#coder-dojo {
+      background: url(../images/coder-dojo.jpg);
+  }
+
+  &#free-code-camp {
+      background: url(../images/free-code-camp.jpg);
+  }
+
+  &#girls-who-code {
+      background: url(../images/girls-who-code.jpg);
+  }
+
+  &#black-girls-who-code {
+      background: url(../images/black-girls-who-code.jpg);
+  }
+
+  &#collective-for-youth {
+      background: url(../images/collective-for-youth.jpg);
+  }
+}
+
 
 
 //! DONATION SECTION ______________________

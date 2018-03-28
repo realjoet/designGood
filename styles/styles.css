@@ -414,6 +414,19 @@ section.welcome {
 .foundation-container {
   padding: 0 0 30px; }
 
+.foundation-image#code-dot-org {
+  background: url(../images/code-dot-org.jpg); }
+.foundation-image#coder-dojo {
+  background: url(../images/coder-dojo.jpg); }
+.foundation-image#free-code-camp {
+  background: url(../images/free-code-camp.jpg); }
+.foundation-image#girls-who-code {
+  background: url(../images/girls-who-code.jpg); }
+.foundation-image#black-girls-who-code {
+  background: url(../images/black-girls-who-code.jpg); }
+.foundation-image#collective-for-youth {
+  background: url(../images/collective-for-youth.jpg); }
+
 .donation-item-container {
   padding: 40px 0; }
 
