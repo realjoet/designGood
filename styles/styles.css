@@ -149,7 +149,9 @@ a {
   .sectional-image#cali-city {
     background: url(../images/cali-city.jpg) no-repeat center center fixed; }
   .sectional-image#section-dos {
-    background: url(../images/beach-scene.jpg) no-repeat center center fixed; }
+    background: url(../images/sea-side-carnival.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 5%; }
 
 .button {
   border: solid 1px #1e1e1e;
@@ -410,6 +412,11 @@ section.welcome {
 
 .inner-section--card-description {
   text-align: justify; }
+
+#get-involved-hero {
+  background: url(../images/get-involved-hero.jpg) no-repeat center center fixed;
+  background-size: 100%;
+  background-position-y: 0%; }
 
 .foundation-container {
   padding: 0 0 30px; }
