@@ -4,7 +4,7 @@ footer.row {
   font-weight: 400;
   padding: 28px 0;
   position: sticky;
-    bottom: -80px;
+    bottom: -430px;
 }
 
 .inner-footer-container {
@@ -33,15 +33,53 @@ footer.row {
   width: 60%;
 }
 
-.social-container {
-  float: right;
-  font-size: 10px;
-  padding: 28px 0;
-  text-align: right;
-  width: 200px;
+.menu-container {
+  padding: 60px 0;
 }
 
-.social-link {
+.internal-menu-container {
   color: #fff;
-  padding: 0 0 0 10px;
+  display: flex;
+  flex-flow: column;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &.buy-now {
+    padding: 0 10% 10px 0;
+    width: 50%;
+
+    .product-offer {
+      background: url(../images/automatingHumanityMockup.jpg);
+      background-size: 100%;
+      height: 250px;
+      width: 390px;
+    }
+
+    .button {
+      border: solid 1px #fff;
+      color: #fff;
+      text-decoration: none;
+      width: 390px;
+
+      &:hover {
+        background: #fff;
+        color: $goodBlack;
+      }
+    }
+  }
+
+  &.links {
+    width: 25%;
+  }
+
+  &.social-links {
+    width: 25%;
+  }
+}
+
+.footer-link {
+  padding: 0 0 10px;
 }

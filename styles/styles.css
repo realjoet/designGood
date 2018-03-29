@@ -126,10 +126,10 @@ a {
   padding: 0 0 18px;
   text-align: left; }
 
-.section-h3 {
+.section-subhead {
   font-family: "noe-display", serif;
   font-size: 21px;
-  margin: 10px 0 6px; }
+  padding: 0 0 10px; }
 
 .wyl--list-title {
   font-weight: 800;
@@ -226,7 +226,7 @@ footer.row {
   font-weight: 400;
   padding: 28px 0;
   position: sticky;
-  bottom: -80px; }
+  bottom: -430px; }
 
 .inner-footer-container {
   margin: 0 auto;
@@ -249,16 +249,39 @@ footer.row {
   text-decoration: underline;
   width: 60%; }
 
-.social-container {
-  float: right;
-  font-size: 10px;
-  padding: 28px 0;
-  text-align: right;
-  width: 200px; }
+.menu-container {
+  padding: 60px 0; }
 
-.social-link {
+.internal-menu-container {
   color: #fff;
-  padding: 0 0 0 10px; }
+  display: flex;
+  flex-flow: column; }
+  .internal-menu-container a {
+    color: #fff;
+    text-decoration: underline; }
+  .internal-menu-container.buy-now {
+    padding: 0 10% 10px 0;
+    width: 50%; }
+    .internal-menu-container.buy-now .product-offer {
+      background: url(../images/automatingHumanityMockup.jpg);
+      background-size: 100%;
+      height: 250px;
+      width: 390px; }
+    .internal-menu-container.buy-now .button {
+      border: solid 1px #fff;
+      color: #fff;
+      text-decoration: none;
+      width: 390px; }
+      .internal-menu-container.buy-now .button:hover {
+        background: #fff;
+        color: #1e1e1e; }
+  .internal-menu-container.links {
+    width: 25%; }
+  .internal-menu-container.social-links {
+    width: 25%; }
+
+.footer-link {
+  padding: 0 0 10px; }
 
 section {
   padding: 80px 75px;
@@ -512,7 +535,19 @@ section.welcome {
   .inner-section--card-name {
     font-family: "noe-display", serif;
     font-size: 21px;
-    padding: 20px 0 8px; } }
+    padding: 20px 0 8px; }
+
+  .internal-menu-container.buy-now {
+    padding: 0 10% 0 0;
+    width: 60%; }
+    .internal-menu-container.buy-now .product-offer {
+      background-size: 100%;
+      height: 250px;
+      width: 390px; }
+  .internal-menu-container.links {
+    width: 20%; }
+  .internal-menu-container.social-links {
+    width: 20%; } }
 @media (max-width: 786px) {
   .section-title {
     font-size: 44px;
@@ -584,7 +619,26 @@ section.welcome {
   footer.row {
     padding: 28px 0;
     position: sticky;
-    bottom: -80px; }
+    bottom: -720px; }
+
+  .internal-menu-container {
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    padding: 20px 0; }
+    .internal-menu-container.buy-now {
+      padding: 20px 0;
+      width: 100%; }
+      .internal-menu-container.buy-now .product-offer {
+        background-size: 100%;
+        height: 230px;
+        width: 360px; }
+      .internal-menu-container.buy-now .button {
+        width: 360px; }
+    .internal-menu-container.links {
+      width: 100%; }
+    .internal-menu-container.social-links {
+      width: 100%; }
 
   .inner-section-container--wide {
     margin: 0 auto;
