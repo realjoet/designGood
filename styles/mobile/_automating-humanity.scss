@@ -5,11 +5,27 @@
 
   .vertical-line4 {
     height: 380px;
-    top: 2890px;
+    top: 2170px;
   }
 
-  #automating-humanity--section-one-image {
-    background-size: 600px;
+  .vertical-line5 {
+    height: 420px;
+    top: 2860px;
+  }
+
+  .sectional-image#automating-humanity--section-one-image {
+    background-size: 650px;
+    background-position: center;
+  }
+
+  .sectional-image#automating-humanity--section-two-image {
+    background-position: 65% 95%;
+    background-size: 185%;
+  }
+
+  .sectional-image#automating-humanity--section-three-image {
+    background-position: 65% 95%;
+    background-size: 185%;
   }
 
 }
