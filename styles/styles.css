@@ -495,6 +495,9 @@ section.welcome {
   background: #1e1e1e;
   height: 200px;
   width: 100%; }
+  .donation-item-image#teach-a-classroom {
+    background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
+    background-size: 100%; }
 
 .foundation-name {
   font-family: "noe-display", serif;

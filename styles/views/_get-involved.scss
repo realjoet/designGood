@@ -88,6 +88,11 @@
   background: $goodBlack;
   height: 200px;
   width: 100%;
+
+  &#teach-a-classroom {
+    background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
+    background-size: 100%;
+  }
 }
 
 .foundation-name {
