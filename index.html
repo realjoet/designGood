@@ -263,7 +263,7 @@
         <footer class="footer row">
             <div class="inner-footer-container">
                 <p class="design-good-logo"><a href="index.html">Design Good</a></p>
-                <div class="menu-button">Open Menu</div>
+                <div class="footer--menu-button" id="footer--menu-button">Open Menu</div>
                 <div class="menu-container row">
                     <div class="internal-menu-container buy-now">
                         <div class="product-offer"></div>
@@ -289,7 +289,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script>
+        <script src="js/main.js"></script>
+
+        <!-- ADD STRIPE CALLS HERE WHEN READY -->
+
+        <!-- <script>
             var handler = StripeCheckout.configure({
               key: 'pk_test_R3xxK8GTuuvQzbOPMp311mST',
               image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
@@ -314,7 +318,7 @@
             window.addEventListener('popstate', function() {
               handler.close();
             });
-        </script>
+        </script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

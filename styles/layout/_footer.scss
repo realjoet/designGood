@@ -24,7 +24,7 @@ footer.row {
   }
 }
 
-.menu-button {
+.footer--menu-button {
   color: #fff;
   cursor: pointer;
   float: right;
@@ -42,8 +42,9 @@ footer.row {
   display: flex;
   flex-flow: column;
 
-  a {
+  a.footer-link {
     color: #fff;
+    cursor: pointer;
     text-decoration: underline;
   }
 

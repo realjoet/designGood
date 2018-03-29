@@ -241,7 +241,7 @@ footer.row {
     color: #fff;
     text-decoration: none; }
 
-.menu-button {
+.footer--menu-button {
   color: #fff;
   cursor: pointer;
   float: right;
@@ -256,8 +256,9 @@ footer.row {
   color: #fff;
   display: flex;
   flex-flow: column; }
-  .internal-menu-container a {
+  .internal-menu-container a.footer-link {
     color: #fff;
+    cursor: pointer;
     text-decoration: underline; }
   .internal-menu-container.buy-now {
     padding: 0 10% 10px 0;
