@@ -234,7 +234,7 @@ footer.row {
 
 .design-good-logo {
   float: left;
-  font-family: 'noeDisplay';
+  font-family: "noe-display", serif;
   font-weight: 400;
   width: 40%; }
   .design-good-logo a {
