@@ -4,7 +4,7 @@
 .inner-section-container--wide {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 40px 0 0;
 }
 
 .inner-section--card-container {
@@ -37,8 +37,9 @@
 
 //! FOUNDATION SECTION ______________________
 //! ____________________________________
-.foundation-container {
-  padding: 0 0 30px;
+
+.foundation-list {
+  padding: 60px 0 0
 }
 
 .foundation-image {
@@ -74,20 +75,28 @@
 //! DONATION SECTION ______________________
 //! ____________________________________
 
-.donation-item-container {
-  padding: 40px 0;
-}
-
 .donation-list {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 60px 0 30px;
+}
+
+.donation-item-container {
+  padding: 0 0 30px;
 }
 
 .donation-item-image {
   background: $goodBlack;
   height: 200px;
-  width: 100%;
+
+  &#good-badge {
+    background: url(../images/good-badge.jpg) center 40% no-repeat;
+    background-size: 130%;
+  }
+
+  &#rep-good {
+    background: url(../images/good-shirt.jpg) center 100% no-repeat;
+  }
 
   &#teach-a-classroom {
     background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;

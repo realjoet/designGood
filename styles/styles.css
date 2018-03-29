@@ -444,7 +444,7 @@ section.welcome {
 .inner-section-container--wide {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 40px 0; }
+  padding: 40px 0 0; }
 
 .inner-section--card-container {
   width: 31%; }
@@ -467,8 +467,8 @@ section.welcome {
   background-size: 100%;
   background-position-y: 0%; }
 
-.foundation-container {
-  padding: 0 0 30px; }
+.foundation-list {
+  padding: 60px 0 0; }
 
 .foundation-image#code-dot-org {
   background: url(../images/code-dot-org.jpg); }
@@ -483,18 +483,22 @@ section.welcome {
 .foundation-image#collective-for-youth {
   background: url(../images/collective-for-youth.jpg); }
 
-.donation-item-container {
-  padding: 40px 0; }
-
 .donation-list {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 60px 0; }
+  padding: 60px 0 30px; }
+
+.donation-item-container {
+  padding: 0 0 30px; }
 
 .donation-item-image {
   background: #1e1e1e;
-  height: 200px;
-  width: 100%; }
+  height: 200px; }
+  .donation-item-image#good-badge {
+    background: url(../images/good-badge.jpg) center 40% no-repeat;
+    background-size: 130%; }
+  .donation-item-image#rep-good {
+    background: url(../images/good-shirt.jpg) center 100% no-repeat; }
   .donation-item-image#teach-a-classroom {
     background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
     background-size: 100%; }
@@ -528,7 +532,7 @@ section.welcome {
     justify-content: space-between;
     padding: 60px 0; }
 
-  .inner-section-container--card-container {
+  .inner-section-container--card-container, .inner-section--card-container {
     width: 48%; }
 
   .inner-section--card-image {
@@ -647,10 +651,10 @@ section.welcome {
 
   .inner-section-container--wide {
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 0 0;
     width: 340px; }
 
-  .inner-section-container--card-container {
+  .inner-section-container--card-container, .inner-section--card-container {
     width: 100%; }
 
   .donation-item-container {
