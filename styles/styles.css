@@ -226,7 +226,7 @@ footer.row {
   font-weight: 400;
   padding: 28px 0;
   position: sticky;
-  bottom: -435px; }
+  bottom: -390px; }
 
 .inner-footer-container {
   margin: 0 auto;
@@ -250,7 +250,7 @@ footer.row {
   width: 60%; }
 
 .menu-container {
-  padding: 60px 0; }
+  padding: 60px 0 10px; }
 
 .internal-menu-container {
   color: #fff;
@@ -618,8 +618,9 @@ section.welcome {
 
   footer.row {
     padding: 20px 0;
+    height: 710px;
     position: sticky;
-    bottom: -725px; }
+    bottom: -650px; }
 
   .internal-menu-container {
     color: #fff;
