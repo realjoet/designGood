@@ -1,3 +1,11 @@
+footer.row {
+  bottom: -380px;
+
+  &.open {
+    bottom: 0;
+  }
+}
+
 .internal-menu-container {
 
   &.buy-now {

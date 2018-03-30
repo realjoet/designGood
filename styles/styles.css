@@ -226,7 +226,10 @@ footer.row {
   font-weight: 400;
   padding: 28px 0;
   position: sticky;
-  bottom: -390px; }
+  bottom: -390px;
+  transition: all linear .3s; }
+  footer.row.open {
+    bottom: 0; }
 
 .inner-footer-container {
   margin: 0 auto;
@@ -545,6 +548,11 @@ section.welcome {
     font-size: 21px;
     padding: 20px 0 8px; }
 
+  footer.row {
+    bottom: -380px; }
+    footer.row.open {
+      bottom: 0; }
+
   .internal-menu-container.buy-now {
     padding: 0 10% 0 0;
     width: 60%; }
@@ -629,6 +637,8 @@ section.welcome {
     height: 710px;
     position: sticky;
     bottom: -650px; }
+    footer.row.open {
+      top: 0; }
 
   .internal-menu-container {
     color: #fff;

@@ -3,6 +3,10 @@ footer.row {
   height: 710px;
   position: sticky;
     bottom: -650px;
+
+  &.open {
+    top: 0;
+  }
 }
 
 .internal-menu-container {

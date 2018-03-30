@@ -5,6 +5,11 @@ footer.row {
   padding: 28px 0;
   position: sticky;
     bottom: -390px;
+  transition: all linear .3s;
+
+  &.open {
+    bottom: 0;
+  }
 }
 
 .inner-footer-container {
