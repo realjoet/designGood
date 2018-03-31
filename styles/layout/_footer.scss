@@ -1,14 +1,14 @@
 .footer{
   background: $goodBlack;
   position: sticky;
-    bottom: -420px;
+    bottom: -430px;
 }
 
 .sticky-footer-container {
   background: $goodBlack;
   color: #FFF;
   font-weight: 400;
-  padding: 28px 0;
+  padding: 20px 0;
   z-index: 2;
 }
 
@@ -47,7 +47,7 @@
   transition: all linear .5s;
 
     &.open {
-      top: -460px;
+      top: -450px;
     }
 
   z-index: 1;
@@ -71,11 +71,11 @@
   }
 
   &.buy-now {
-    padding: 0 10% 10px 0;
+    padding: 0 10% 20px 0;
     width: 50%;
 
     .product-offer {
-      background: url(../images/automatingHumanityMockup.jpg);
+      background: url(../images/automatingHumanityMockup.jpg) center no-repeat;
       background-size: 100%;
       height: 250px;
       width: 390px;
