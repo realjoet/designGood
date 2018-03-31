@@ -1,9 +1,13 @@
-footer.row {
-  bottom: -380px;
+.footer {
+  bottom: -430px;
+}
 
-  &.open {
-    bottom: 0;
-  }
+.menu-container {
+  padding: 60px 0;
+
+    &.open {
+      top: -470px;
+    }
 }
 
 .internal-menu-container {

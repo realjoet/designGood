@@ -1,20 +1,20 @@
-footer.row {
+.footer{
+  position: sticky;
+    bottom: -390px;
+}
+
+.sticky-footer-container {
   background: $goodBlack;
   color: #FFF;
   font-weight: 400;
   padding: 28px 0;
-  position: sticky;
-    bottom: -390px;
-  transition: all linear .3s;
-
-  &.open {
-    bottom: 0;
-  }
+  z-index: 2;
 }
 
 .inner-footer-container {
   margin: 0 auto;
   width: 90%;
+  z-index: 2;
 }
 
 .design-good-logo {
@@ -39,7 +39,23 @@ footer.row {
 }
 
 .menu-container {
+  background: $goodBlack;
   padding: 60px 0 10px;
+  position: relative;
+    top: 0;
+  transition: all linear .5s;
+
+    &.open {
+      top: -460px;
+    }
+
+  z-index: 1;
+}
+
+.inner-menu-container {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .internal-menu-container {

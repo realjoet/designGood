@@ -1,12 +1,30 @@
-footer.row {
-  padding: 20px 0;
+.footer {
   height: 710px;
   position: sticky;
-    bottom: -650px;
+    bottom: -652px;
+}
 
-  &.open {
-    top: 0;
-  }
+.sticky-footer-container {
+  background: $goodBlack;
+  color: #FFF;
+  font-weight: 400;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.menu-container {
+  padding: 35px 0 10px;
+
+    &.open {
+      top: -710px;
+    }
+}
+
+.inner-menu-container {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  width: 360px;
 }
 
 .internal-menu-container {

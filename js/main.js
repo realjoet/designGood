@@ -1,7 +1,7 @@
 $(function() {
   $('.footer--menu-button').click(function(){
     var $this = $(this);
-    var $footer = $('footer');
+    var $footer = $('.menu-container');
 
     if ($footer.hasClass('open')) {
       $this.html('Open Menu');
