@@ -223,7 +223,7 @@ a {
 .footer {
   background: #1e1e1e;
   position: sticky;
-  bottom: -390px; }
+  bottom: -420px; }
 
 .sticky-footer-container {
   background: #1e1e1e;
@@ -256,7 +256,7 @@ a {
 
 .menu-container {
   background: #1e1e1e;
-  padding: 60px 0 10px;
+  padding: 60px 0 40px;
   position: relative;
   top: 0;
   transition: all linear .5s;

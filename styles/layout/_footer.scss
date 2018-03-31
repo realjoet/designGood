@@ -1,7 +1,7 @@
 .footer{
   background: $goodBlack;
   position: sticky;
-    bottom: -390px;
+    bottom: -420px;
 }
 
 .sticky-footer-container {
@@ -41,7 +41,7 @@
 
 .menu-container {
   background: $goodBlack;
-  padding: 60px 0 10px;
+  padding: 60px 0 40px;
   position: relative;
     top: 0;
   transition: all linear .5s;
