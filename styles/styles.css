@@ -664,7 +664,7 @@ section.welcome {
   .menu-container {
     padding: 35px 0 10px; }
     .menu-container.open {
-      top: -630px; }
+      top: -600px; }
 
   .inner-menu-container {
     display: flex;
