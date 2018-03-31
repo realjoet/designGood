@@ -221,6 +221,7 @@ a {
   width: 80px; }
 
 .footer {
+  background: #1e1e1e;
   position: sticky;
   bottom: -390px; }
 
