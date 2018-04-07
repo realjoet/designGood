@@ -431,11 +431,11 @@ section.welcome {
 .ah-page .vertical-line4 {
   height: 1200px;
   position: absolute;
-  top: 1890px; }
+  top: 2040px; }
 .ah-page .vertical-line5 {
   height: 1200px;
   position: absolute;
-  top: 3030px; }
+  top: 3560px; }
 .ah-page .what-you-learn {
   padding: 20px 0 0; }
   .ah-page .what-you-learn .wyl--learning {
@@ -629,10 +629,10 @@ section.welcome {
     display: none; }
   .ah-page .vertical-line4 {
     height: 380px;
-    top: 2170px; }
+    top: 2230px; }
   .ah-page .vertical-line5 {
     height: 420px;
-    top: 3360px; }
+    top: 3400px; }
   .ah-page .sectional-image#automating-humanity--section-one-image {
     background-size: 650px;
     background-position: center; }
