@@ -39,7 +39,26 @@
 //! ____________________________________
 
 .foundation-list {
-  padding: 60px 0 0
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0 0;
+}
+
+.foundation-container {
+  padding: 0 0 30px;
+  width: 31%;
+}
+
+.foundation-image {
+  background: $goodBlack;
+  height: 200px;
+  width: 100%;
+}
+
+.foundation-name {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 20px 0 8px;
 }
 
 .foundation-image {
@@ -78,11 +97,12 @@
 .donation-list {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 60px 0 30px;
+  padding: 60px 0 0;
 }
 
 .donation-item-container {
-  padding: 0 0 30px;
+  padding: 30px 0;
+  width: 100%;
 }
 
 .donation-item-image {
@@ -104,34 +124,7 @@
   }
 }
 
-.foundation-name {
-  font-family: $noeDisplay;
-  font-size: 21px;
-  padding: 20px 0 8px;
-}
 
 
 //! DESIGNER LIST SECTION ______________________
 //! ____________________________________
-
-.foundation-list {
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 60px 0;
-}
-
-.foundation-container {
-  width: 31%;
-}
-
-.foundation-image {
-  background: $goodBlack;
-  height: 200px;
-  width: 100%;
-}
-
-.foundation-name {
-  font-family: $noeDisplay;
-  font-size: 21px;
-  padding: 20px 0 8px;
-}

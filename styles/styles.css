@@ -321,7 +321,7 @@ section {
 .vertical-line2 {
   height: 1200px;
   position: absolute;
-  top: 2720px; }
+  top: 2890px; }
 
 section.welcome {
   padding: 160px 0; }
@@ -485,7 +485,23 @@ section.welcome {
   background-position-y: 0%; }
 
 .foundation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
   padding: 60px 0 0; }
+
+.foundation-container {
+  padding: 0 0 30px;
+  width: 31%; }
+
+.foundation-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.foundation-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
 
 .foundation-image#code-dot-org {
   background: url(../images/code-dot-org.jpg); }
@@ -503,10 +519,11 @@ section.welcome {
 .donation-list {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 60px 0 30px; }
+  padding: 60px 0 0; }
 
 .donation-item-container {
-  padding: 0 0 30px; }
+  padding: 30px 0;
+  width: 100%; }
 
 .donation-item-image {
   background: #1e1e1e;
@@ -519,29 +536,6 @@ section.welcome {
   .donation-item-image#teach-a-classroom {
     background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
     background-size: 100%; }
-
-.foundation-name {
-  font-family: "noe-display", serif;
-  font-size: 21px;
-  padding: 20px 0 8px; }
-
-.foundation-list {
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 60px 0; }
-
-.foundation-container {
-  width: 31%; }
-
-.foundation-image {
-  background: #1e1e1e;
-  height: 200px;
-  width: 100%; }
-
-.foundation-name {
-  font-family: "noe-display", serif;
-  font-size: 21px;
-  padding: 20px 0 8px; }
 
 @media (max-width: 1024px) {
   .inner-section-container--wide {
@@ -615,7 +609,7 @@ section.welcome {
 
   .vertical-line2 {
     height: 420px;
-    top: 2870px; }
+    top: 3310px; }
 
   .hero-title {
     font-size: 60px;
