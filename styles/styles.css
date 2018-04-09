@@ -220,6 +220,9 @@ a {
   transition: .3s linear;
   width: 80px; }
 
+.section-description.fine-print {
+  padding: 10px 0 0; }
+
 .footer {
   background: #1e1e1e;
   position: sticky;
