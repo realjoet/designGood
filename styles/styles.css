@@ -181,6 +181,8 @@ a {
     margin: 0 0 10px; }
   .button.last-button {
     margin: 0; }
+  .button.half-wide {
+    width: 48%; }
 
 .quote.row {
   background: #1e1e1e;
@@ -539,6 +541,9 @@ section.welcome {
   .donation-item-image#teach-a-classroom {
     background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
     background-size: 100%; }
+
+.donation-calculator {
+  justify-content: space-between; }
 
 @media (max-width: 1024px) {
   .inner-section-container--wide {
