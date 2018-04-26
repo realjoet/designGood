@@ -1,0 +1,106 @@
+.ah-page {
+  .sectional-image {
+    padding: 0;
+    width: 100%;
+
+    @include background-cover;
+
+    &#we-need-to-talk--section-one-image {
+      background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+      background-color: #b0b7c5;
+      background-position: 30% 45%;
+      background-size: 110%;
+    }
+
+    &#we-need-to-talk--section-two-image {
+      background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%;
+    }
+
+    &#we-need-to-talk--section-three-image {
+      background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%;
+    }
+  }
+
+  .vertical-line3 {
+    @extend %vertical-line--right;
+
+    height: 850px;
+    position: absolute;
+      top: 350px;
+  }
+
+  .vertical-line4 {
+    @extend %vertical-line--left;
+
+    height: 1200px;
+    position: absolute;
+      top: 2040px;
+  }
+
+  .vertical-line5 {
+    @extend %vertical-line--right;
+
+    height: 1200px;
+    position: absolute;
+      top: 3360px;
+  }
+
+  // section.welcome {
+  //   padding: 120px 0;
+  // }
+
+  //! INTRO SECTION ______________________
+  //! ____________________________________
+
+  .what-you-learn {
+    padding: 20px 0 0;
+
+    .wyl--learning {
+      padding: 0 0 12px;
+      text-align: justify;
+    }
+  }
+
+  //! INTRO SECTION ______________________
+  //! ____________________________________
+
+  .sample-quotes {
+    list-style-image: url(../images/quote-marks.png);
+
+    .sample-quotes--quote {
+      padding: 0 0 8px;
+      text-align: justify;
+    }
+
+    .sample-quotes--person {
+      padding: 0 0 20px;
+    }
+  }
+
+  //! TABLE OF CONTENTS SECTION ______________________
+  //! ____________________________________
+
+  .toc-container {
+  }
+
+  .toc-outline {
+    padding: 0 0 20px;
+
+    .toc-outline--section-title {
+      padding: 0 0 12px;
+    }
+
+    .toc-outline--chapter-title {
+      padding: 0;
+    }
+  }
+
+  .fine-print {
+    float: left;
+    padding: 10px 0 0;
+  }
+}

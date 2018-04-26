@@ -16,10 +16,12 @@ My globals file probably needs something from all three of the previously import
 @import "views/main";
 @import "views/automating-humanity";
 @import "views/get-involved";
+@import "views/we-need-to-talk";
 
 @media (max-width: 1024px) {
   @import "tablet/get-involved";
   @import "tablet/footer";
+  @import "tablet/we-need-to-talk";
 }
 
 @media (max-width: 786px) {
@@ -28,4 +30,5 @@ My globals file probably needs something from all three of the previously import
   @import "mobile/automating-humanity";
   @import "mobile/footer";
   @import "mobile/get-involved";
+  @import "mobile/we-need-to-talk";
 }

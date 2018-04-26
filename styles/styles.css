@@ -552,6 +552,60 @@ section.welcome {
 .donate-today {
   text-align: center; }
 
+.ah-page .sectional-image {
+  padding: 0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .ah-page .sectional-image#we-need-to-talk--section-one-image {
+    background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+    background-color: #b0b7c5;
+    background-position: 30% 45%;
+    background-size: 110%; }
+  .ah-page .sectional-image#we-need-to-talk--section-two-image {
+    background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+    background-position-y: 95%;
+    background-size: 105%; }
+  .ah-page .sectional-image#we-need-to-talk--section-three-image {
+    background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+    background-position-y: 95%;
+    background-size: 105%; }
+.ah-page .vertical-line3 {
+  height: 850px;
+  position: absolute;
+  top: 350px; }
+.ah-page .vertical-line4 {
+  height: 1200px;
+  position: absolute;
+  top: 2040px; }
+.ah-page .vertical-line5 {
+  height: 1200px;
+  position: absolute;
+  top: 3360px; }
+.ah-page .what-you-learn {
+  padding: 20px 0 0; }
+  .ah-page .what-you-learn .wyl--learning {
+    padding: 0 0 12px;
+    text-align: justify; }
+.ah-page .sample-quotes {
+  list-style-image: url(../images/quote-marks.png); }
+  .ah-page .sample-quotes .sample-quotes--quote {
+    padding: 0 0 8px;
+    text-align: justify; }
+  .ah-page .sample-quotes .sample-quotes--person {
+    padding: 0 0 20px; }
+.ah-page .toc-outline {
+  padding: 0 0 20px; }
+  .ah-page .toc-outline .toc-outline--section-title {
+    padding: 0 0 12px; }
+  .ah-page .toc-outline .toc-outline--chapter-title {
+    padding: 0; }
+.ah-page .fine-print {
+  float: left;
+  padding: 10px 0 0; }
+
 @media (max-width: 1024px) {
   .inner-section-container--wide {
     flex-flow: row wrap;
@@ -589,7 +643,49 @@ section.welcome {
   .internal-menu-container.links {
     width: 20%; }
   .internal-menu-container.social-links {
-    width: 20%; } }
+    width: 20%; }
+
+  .ah-page .sectional-image {
+    padding: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .ah-page .sectional-image#we-need-to-talk--section-one-image {
+      background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+      background-color: #b0b7c5;
+      background-position: 47% 45%;
+      background-size: 170%; }
+    .ah-page .sectional-image#we-need-to-talk--section-two-image {
+      background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+    .ah-page .sectional-image#we-need-to-talk--section-three-image {
+      background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+  .ah-page .what-you-learn {
+    padding: 20px 0 0; }
+    .ah-page .what-you-learn .wyl--learning {
+      padding: 0 0 12px;
+      text-align: justify; }
+  .ah-page .sample-quotes {
+    list-style-image: url(../images/quote-marks.png); }
+    .ah-page .sample-quotes .sample-quotes--quote {
+      padding: 0 0 8px;
+      text-align: justify; }
+    .ah-page .sample-quotes .sample-quotes--person {
+      padding: 0 0 20px; }
+  .ah-page .toc-outline {
+    padding: 0 0 20px; }
+    .ah-page .toc-outline .toc-outline--section-title {
+      padding: 0 0 12px; }
+    .ah-page .toc-outline .toc-outline--chapter-title {
+      padding: 0; }
+  .ah-page .fine-print {
+    float: left;
+    padding: 10px 0 0; } }
 @media (max-width: 786px) {
   .section-title {
     font-size: 44px;
@@ -708,6 +804,48 @@ section.welcome {
     width: 100%; }
 
   .donation-item-container {
-    padding: 30px 0; } }
+    padding: 30px 0; }
+
+  .ah-page .sectional-image {
+    padding: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .ah-page .sectional-image#we-need-to-talk--section-one-image {
+      background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+      background-color: #b0b7c5;
+      background-position: 47% 45%;
+      background-size: 230%; }
+    .ah-page .sectional-image#we-need-to-talk--section-two-image {
+      background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+    .ah-page .sectional-image#we-need-to-talk--section-three-image {
+      background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+  .ah-page .what-you-learn {
+    padding: 20px 0 0; }
+    .ah-page .what-you-learn .wyl--learning {
+      padding: 0 0 12px;
+      text-align: justify; }
+  .ah-page .sample-quotes {
+    list-style-image: url(../images/quote-marks.png); }
+    .ah-page .sample-quotes .sample-quotes--quote {
+      padding: 0 0 8px;
+      text-align: justify; }
+    .ah-page .sample-quotes .sample-quotes--person {
+      padding: 0 0 20px; }
+  .ah-page .toc-outline {
+    padding: 0 0 20px; }
+    .ah-page .toc-outline .toc-outline--section-title {
+      padding: 0 0 12px; }
+    .ah-page .toc-outline .toc-outline--chapter-title {
+      padding: 0; }
+  .ah-page .fine-print {
+    float: left;
+    padding: 10px 0 0; } }
 
 /*# sourceMappingURL=styles.css.map */
