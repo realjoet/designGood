@@ -184,6 +184,12 @@ a {
     margin: 0; }
   .button.half-wide {
     width: 48%; }
+  .button.coming-soon {
+    transition: none; }
+    .button.coming-soon:hover {
+      background: #fff;
+      color: #1e1e1e;
+      cursor: default; }
 
 .quote.row {
   background: #1e1e1e;

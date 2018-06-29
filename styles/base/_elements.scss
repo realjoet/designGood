@@ -99,6 +99,17 @@
   &.half-wide {
     width: 48%;
   }
+  
+  &.coming-soon {
+    transition: none;
+
+    &:hover {
+      background: #fff;
+      color: $goodBlack;
+      cursor: default;
+
+    }
+  }
 }
 
 .quote.row {
