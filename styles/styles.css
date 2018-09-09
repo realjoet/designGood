@@ -375,6 +375,11 @@ section.welcome {
   float: left;
   width: 400px; }
 
+.event-display {
+  align-items: center;
+  margin: 20px auto;
+  width: 80%; }
+
 .event-list {
   padding: 20px 0 0; }
 
