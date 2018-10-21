@@ -55,6 +55,17 @@ section.welcome {
   width: 100%;
 }
 
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.feature-display {
+  margin: 20px auto;
+  width: 50%;
+}
+
 
 
 //! ABOUT SECTION ______________________

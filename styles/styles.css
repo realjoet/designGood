@@ -354,6 +354,15 @@ section.welcome {
   text-align: center;
   width: 100%; }
 
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.feature-display {
+  margin: 20px auto;
+  width: 50%; }
+
 .book-display {
   align-items: center;
   margin: 20px auto; }
