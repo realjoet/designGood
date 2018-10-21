@@ -901,6 +901,10 @@ section.welcome {
     font-size: 13px;
     font-weight: 400; }
 
+  .feature-display {
+    margin: 20px auto;
+    width: 80%; }
+
   .section-quote {
     font-size: 24px;
     margin: 20px auto;
