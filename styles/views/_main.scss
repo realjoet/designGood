@@ -68,9 +68,27 @@ section.welcome {
 
 
 
-//! ABOUT SECTION ______________________
+//! TECH CHECK SECTION ______________________
 //! ____________________________________
+.tech-check {
+  background: $goodBlack;
+  color: #ffffff;
 
+  .section-title {
+    color: #ffffff;
+  }
+
+  .button {
+    border: solid 1px #ffffff;
+    color: #ffffff;
+
+    &:hover {
+      background: #ffffff;
+      color: $goodBlack;
+      font-weight: 500;
+    }
+  }
+}
 
 //! BOOK SECTION ______________________
 //! ____________________________________

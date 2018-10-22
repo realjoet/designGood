@@ -363,6 +363,19 @@ section.welcome {
   margin: 20px auto;
   width: 50%; }
 
+.tech-check {
+  background: #1e1e1e;
+  color: #ffffff; }
+  .tech-check .section-title {
+    color: #ffffff; }
+  .tech-check .button {
+    border: solid 1px #ffffff;
+    color: #ffffff; }
+    .tech-check .button:hover {
+      background: #ffffff;
+      color: #1e1e1e;
+      font-weight: 500; }
+
 .book-display {
   align-items: center;
   margin: 20px auto; }
