@@ -18,6 +18,7 @@ My globals file probably needs something from all three of the previously import
 @import "views/get-involved";
 @import "views/donate";
 @import "views/we-need-to-talk";
+@import "views/resources";
 
 @media (max-width: 1024px) {
   @import "tablet/get-involved";

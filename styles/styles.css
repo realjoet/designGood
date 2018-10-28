@@ -58,7 +58,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   vertical-align: baseline;
   width: 100%;
@@ -137,8 +137,6 @@ a {
 
 .section-description {
   align-items: center;
-  font-size: 13px;
-  line-height: 18px;
   margin: 0 auto;
   text-align: justify; }
 
@@ -156,6 +154,10 @@ a {
     background: url(../images/sea-side-carnival.jpg) no-repeat center center fixed;
     background-size: 100%;
     background-position-y: 5%; }
+  .sectional-image#page-one--section-resources {
+    background: url(../images/resources.jpg) no-repeat center center fixed;
+    background-size: 140%;
+    background-position-y: 35%; }
 
 .button {
   border: solid 1px #1e1e1e;
@@ -164,7 +166,6 @@ a {
   cursor: pointer;
   display: inline-block;
   float: left;
-  font-size: 13px;
   margin: 10px 0;
   padding: 8px 0;
   text-align: center;
@@ -202,7 +203,7 @@ a {
   line-height: 40px;
   margin: 50px auto; }
 
-.vertical-line, .ah-page .vertical-line3, .ah-page .vertical-line5 {
+.vertical-line, .vertical-line6, .ah-page .vertical-line3, .ah-page .vertical-line5 {
   border: 0.5px solid #1e1e1e;
   position: absolute;
   left: 90%;
@@ -218,7 +219,6 @@ a {
   color: #1e1e1e;
   cursor: pointer;
   float: left;
-  font-size: 13px;
   margin: 10px 0;
   padding: 8px 0;
   position: absolute;
@@ -333,7 +333,12 @@ section {
 .vertical-line2 {
   height: 1200px;
   position: absolute;
-  top: 2890px; }
+  top: 2650px; }
+
+.vertical-line6 {
+  height: 1000px;
+  position: absolute;
+  top: 5500px; }
 
 section.welcome {
   padding: 160px 0; }
@@ -375,6 +380,30 @@ section.welcome {
       background: #ffffff;
       color: #1e1e1e;
       font-weight: 500; }
+
+.resource-offerings-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.resource-offering {
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  padding: 23px 20px;
+  text-decoration: none;
+  transition: .3s linear;
+  width: 31%; }
+  .resource-offering:hover {
+    background: #1e1e1e;
+    color: #fff; }
+
+.resource-title {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 60% 0 10px; }
+
+.resource-description {
+  text-align: justify; }
 
 .book-display {
   align-items: center;
@@ -451,7 +480,7 @@ section.welcome {
   -o-background-size: cover;
   background-size: cover; }
   .ah-page .sectional-image#automating-humanity--section-one-image {
-    background: url(../images/automatingHumanityProductMockup--wide.jpg) center no-repeat;
+    background: url(../images/automatingHumanityMockup.jpg) center no-repeat;
     background-color: #b0b7c5;
     background-position: 30% 45%;
     background-size: 110%; }
@@ -791,6 +820,18 @@ section.welcome {
   float: left;
   padding: 10px 0 0; }
 
+.resources-nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 160px 0 0;
+  width: 80%; }
+
+.resources-nav--link {
+  font-size: 21px;
+  width: auto; }
+
 @media (max-width: 1024px) {
   .inner-section-container--wide {
     flex-flow: row wrap;
@@ -883,7 +924,7 @@ section.welcome {
   .button.hero-button {
     width: 340px; }
 
-  .vertical-line, .ah-page .vertical-line3, .ah-page .vertical-line5 {
+  .vertical-line, .vertical-line6, .ah-page .vertical-line3, .ah-page .vertical-line5 {
     left: 95%; }
 
   .vertical-line2, .ah-page .vertical-line4 {

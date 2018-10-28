@@ -1,0 +1,13 @@
+.resources-nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 160px 0 0;
+  width: 80%;
+}
+
+.resources-nav--link {
+  font-size: 21px;
+  width: auto;
+}
