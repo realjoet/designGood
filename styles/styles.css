@@ -389,7 +389,7 @@ section.welcome {
 .resource-offering {
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
-  padding: 23px 20px;
+  padding: 30px;
   text-decoration: none;
   transition: .3s linear;
   width: 31%; }
@@ -831,6 +831,9 @@ section.welcome {
 .resources-nav--link {
   font-size: 21px;
   width: auto; }
+
+.resource-offering {
+  margin: 0 0 30px; }
 
 @media (max-width: 1024px) {
   .inner-section-container--wide {
