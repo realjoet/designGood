@@ -835,6 +835,9 @@ section.welcome {
 .resource-offering {
   margin: 0 0 30px; }
 
+#technicalSupportCat {
+  width: 530px; }
+
 @media (max-width: 1024px) {
   .inner-section-container--wide {
     flex-flow: row wrap;
