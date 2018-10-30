@@ -12,8 +12,35 @@
   width: auto;
 }
 
+.resource-offerings-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .resource-offering {
+  border: 1px solid $goodBlack;
+  color: $goodBlack;
   margin: 0 0 30px;
+  padding: 30px;
+  text-decoration: none;
+  transition: .3s linear;
+  width: 31%;
+
+  &:hover {
+    background: $goodBlack;
+    color: #fff;
+  }
+}
+
+.resource-title {
+  font-family: $noeDisplay;
+  font-size: 21px;
+  padding: 60% 0 10px;
+}
+
+.resource-description {
+  text-align: left;
 }
 
 #technicalSupportCat {

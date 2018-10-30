@@ -24,6 +24,7 @@ My globals file probably needs something from all three of the previously import
   @import "tablet/get-involved";
   @import "tablet/footer";
   @import "tablet/we-need-to-talk";
+  @import "tablet/resources";
 }
 
 @media (max-width: 786px) {
@@ -33,4 +34,5 @@ My globals file probably needs something from all three of the previously import
   @import "mobile/footer";
   @import "mobile/get-involved";
   @import "mobile/we-need-to-talk";
+  @import "mobile/resources";
 }
