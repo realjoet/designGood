@@ -149,9 +149,9 @@ a {
   -o-background-size: cover;
   background-size: cover; }
   .sectional-image#page-one--section-one {
-    background: url(../images/cali-city.jpg) no-repeat center center fixed; }
+    background: url(../images/caliCity.jpg) no-repeat center center fixed; }
   .sectional-image#page-one--section-two {
-    background: url(../images/sea-side-carnival.jpg) no-repeat center center fixed;
+    background: url(../images/carnival.jpg) no-repeat center center fixed;
     background-size: 100%;
     background-position-y: 5%; }
   .sectional-image#page-one--section-resources {
@@ -381,30 +381,6 @@ section.welcome {
       color: #1e1e1e;
       font-weight: 500; }
 
-.resource-offerings-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
-
-.resource-offering {
-  border: 1px solid #1e1e1e;
-  color: #1e1e1e;
-  padding: 30px;
-  text-decoration: none;
-  transition: .3s linear;
-  width: 31%; }
-  .resource-offering:hover {
-    background: #1e1e1e;
-    color: #fff; }
-
-.resource-title {
-  font-family: "noe-display", serif;
-  font-size: 21px;
-  padding: 60% 0 10px; }
-
-.resource-description {
-  text-align: justify; }
-
 .book-display {
   align-items: center;
   margin: 20px auto; }
@@ -548,7 +524,7 @@ section.welcome {
   text-align: justify; }
 
 #get-involved-hero {
-  background: url(../images/get-involved-hero.jpg) no-repeat center center fixed;
+  background: url(../images/getInvolved.jpg) no-repeat center center fixed;
   background-size: 100%;
   background-position-y: 0%; }
 
@@ -602,7 +578,7 @@ section.welcome {
   .donation-item-image#rep-good {
     background: url(../images/good-shirt.jpg) center 100% no-repeat; }
   .donation-item-image#teach-a-classroom {
-    background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
+    background: url(../images/teachClassroom.jpg) center 100% no-repeat;
     background-size: 100%; }
 
 .donation-calculator {
@@ -861,6 +837,23 @@ section.welcome {
   width: 530px; }
 
 @media (max-width: 1024px) {
+  .sectional-image {
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .sectional-image#page-one--section-one {
+      background: url(../images/caliCity--tablet.jpg) no-repeat center center fixed; }
+    .sectional-image#page-one--section-two {
+      background: url(../images/carnival--tablet.jpg) no-repeat center center fixed;
+      background-size: 100%;
+      background-position-y: 5%; }
+    .sectional-image#page-one--section-resources {
+      background: url(../images/resources--tablet.jpg) no-repeat center center fixed;
+      background-size: 140%;
+      background-position-y: 35%; }
+
   .inner-section-container--wide {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -878,6 +871,11 @@ section.welcome {
     font-family: "noe-display", serif;
     font-size: 21px;
     padding: 20px 0 8px; }
+
+  #get-involved-hero {
+    background: url(../images/getInvolved--tablet.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 0%; }
 
   .footer {
     bottom: -430px; }
@@ -963,7 +961,21 @@ section.welcome {
     padding: 0 0 20px; }
 
   .sectional-image {
-    height: 300px; }
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .sectional-image#page-one--section-one {
+      background: url(../images/caliCity--tablet.jpg) no-repeat center center fixed; }
+    .sectional-image#page-one--section-two {
+      background: url(../images/carnival--tablet.jpg) no-repeat center center fixed;
+      background-size: 100%;
+      background-position-y: 5%; }
+    .sectional-image#page-one--section-resources {
+      background: url(../images/resources--tablet.jpg) no-repeat center center fixed;
+      background-size: 140%;
+      background-position-y: 35%; }
 
   .button.hero-button {
     width: 340px; }
@@ -1072,6 +1084,11 @@ section.welcome {
 
   .inner-section-container--card-container, .inner-section--card-container {
     width: 100%; }
+
+  #get-involved-hero {
+    background: url(../images/getInvolved--mobile.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 0%; }
 
   .donation-item-container {
     padding: 30px 0; }

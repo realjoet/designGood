@@ -1,0 +1,1154 @@
+/*
+Make sure you import files in order (from top to bottom), based on what other files will need.
+
+For example, my variables file may need a font I imported, so typography is imported first...
+My mixins file probably needs a variable and possibly a font I imported, so my variables and typography files are imported before my mixins file...
+My globals file probably needs something from all three of the previously imported files, etc.
+*/
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Paulo Goode
+ * License URL: https://www.fontspring.com/licenses/paulogoode/webfont
+ *
+ *
+ */
+@font-face {
+  font-family: 'didonesque-roman';
+  src: url("assets/didonesque-roman-webfont.woff2") format("woff2"), url("assets/didonesque-roman-webfont.woff") format("woff"), url("assets/didonesque-roman.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'noe-display';
+  src: url("assets/noe-display-bold.eot") format("eot"), url("assets/noe-display-bold.woff") format("woff"), url("assets/noe-display-bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: baseline;
+  width: 100%;
+  /* Set to border-box to keep consistentcy across width/positioning adjustments */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: flex;
+  flex-flow: row wrap; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: #2852fa;
+  text-decoration: underline; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%; }
+
+/* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+.inner-section-container {
+  margin: 0 auto;
+  width: 400px; }
+
+.section-title {
+  color: #2d2d2d;
+  font-family: "noe-display", serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 80px;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 100%; }
+
+.section-header {
+  font-family: "noe-display", serif;
+  font-size: 32px;
+  line-height: 42px;
+  padding: 0 0 18px;
+  text-align: left; }
+
+.section-subhead {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 0 0 10px; }
+
+.wyl--list-title {
+  font-weight: 800;
+  padding: 0 0 10px; }
+
+.section-description {
+  align-items: center;
+  margin: 0 auto;
+  text-align: justify; }
+
+.sectional-image {
+  height: 500px;
+  padding: 0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .sectional-image#page-one--section-one {
+    background: url(../images/caliCity.jpg) no-repeat center center fixed; }
+  .sectional-image#page-one--section-two {
+    background: url(../images/carnival.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 5%; }
+  .sectional-image#page-one--section-resources {
+    background: url(../images/resources.jpg) no-repeat center center fixed;
+    background-size: 140%;
+    background-position-y: 35%; }
+
+.button {
+  border: solid 1px #1e1e1e;
+  border-radius: 2px;
+  color: #1e1e1e;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 10px 0;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s linear; }
+  .button:hover {
+    background: #1e1e1e;
+    color: #fff; }
+  .button.hero-button {
+    margin: 0 auto;
+    width: 400px; }
+  .button.first-button {
+    margin-top: 20px; }
+  .button.middle-button {
+    margin: 0 0 10px; }
+  .button.last-button {
+    margin: 0; }
+  .button.half-wide {
+    width: 48%; }
+  .button.coming-soon {
+    transition: none; }
+    .button.coming-soon:hover {
+      background: #fff;
+      color: #1e1e1e;
+      cursor: default; }
+
+.quote.row {
+  background: #1e1e1e;
+  color: #fff;
+  text-align: center; }
+
+.section-quote {
+  font-family: "noe-display", serif;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 50px auto; }
+
+.vertical-line, .vertical-line6, .ah-page .vertical-line3, .ah-page .vertical-line5 {
+  border: 0.5px solid #1e1e1e;
+  position: absolute;
+  left: 90%;
+  width: 1px; }
+
+.vertical-line2, .ah-page .vertical-line4 {
+  border: 0.5px solid #1e1e1e;
+  position: absolute;
+  left: 10%;
+  width: 1px; }
+
+.back-button {
+  color: #1e1e1e;
+  cursor: pointer;
+  float: left;
+  margin: 10px 0;
+  padding: 8px 0;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s linear;
+  width: 80px; }
+
+.section-description.fine-print {
+  padding: 10px 0 0; }
+
+.footer {
+  background: #1e1e1e;
+  position: sticky;
+  bottom: -430px; }
+
+.sticky-footer-container {
+  background: #1e1e1e;
+  color: #FFF;
+  font-weight: 400;
+  padding: 20px 0;
+  z-index: 2; }
+
+.inner-footer-container {
+  margin: 0 auto;
+  width: 90%;
+  z-index: 2; }
+
+.design-good-logo {
+  float: left;
+  font-family: "noe-display", serif;
+  font-weight: 400;
+  width: 40%; }
+  .design-good-logo a {
+    color: #fff;
+    text-decoration: none; }
+
+.footer--menu-button {
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  text-align: right;
+  text-decoration: underline;
+  width: 60%; }
+
+.menu-container {
+  background: #1e1e1e;
+  padding: 60px 0 40px;
+  position: relative;
+  top: 0;
+  transition: all linear .5s;
+  z-index: 1; }
+  .menu-container.open {
+    top: -450px; }
+
+.inner-menu-container {
+  display: flex;
+  margin: 0 auto;
+  width: 90%; }
+
+.internal-menu-container {
+  color: #fff;
+  display: flex;
+  flex-flow: column; }
+  .internal-menu-container a.footer-link {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline; }
+  .internal-menu-container.buy-now {
+    padding: 0 10% 20px 0;
+    width: 50%; }
+    .internal-menu-container.buy-now .product-offer {
+      background: url(../images/automatingHumanityMockup.jpg) center no-repeat;
+      background-size: 100%;
+      height: 250px;
+      width: 390px; }
+    .internal-menu-container.buy-now .button {
+      border: solid 1px #fff;
+      color: #fff;
+      text-decoration: none;
+      width: 390px; }
+      .internal-menu-container.buy-now .button:hover {
+        background: #fff;
+        color: #1e1e1e; }
+  .internal-menu-container.links {
+    width: 25%; }
+  .internal-menu-container.social-links {
+    width: 25%; }
+
+.footer-link {
+  padding: 0 0 10px; }
+
+section {
+  padding: 80px 75px;
+  width: 100%; }
+
+.container {
+  color: #1e1e1e;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.vertical-line {
+  height: 700px;
+  position: absolute;
+  top: 350px; }
+
+.vertical-line2 {
+  height: 1200px;
+  position: absolute;
+  top: 2650px; }
+
+.vertical-line6 {
+  height: 1000px;
+  position: absolute;
+  top: 5500px; }
+
+section.welcome {
+  padding: 160px 0; }
+
+.hero-title {
+  color: #1e1e1e;
+  font-family: 'noe-display';
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 120px;
+  padding: 0 0 30px;
+  text-align: center;
+  width: 100%; }
+
+.hero-description {
+  font-size: 21px;
+  font-weight: 200;
+  text-align: center;
+  width: 100%; }
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.feature-display {
+  margin: 20px auto;
+  width: 50%; }
+
+.tech-check {
+  background: #1e1e1e;
+  color: #ffffff; }
+  .tech-check .section-title {
+    color: #ffffff; }
+  .tech-check .button {
+    border: solid 1px #ffffff;
+    color: #ffffff; }
+    .tech-check .button:hover {
+      background: #ffffff;
+      color: #1e1e1e;
+      font-weight: 500; }
+
+.book-display {
+  align-items: center;
+  margin: 20px auto; }
+
+.what-you-learn {
+  list-style-type: disc; }
+  .what-you-learn .wyl--learning {
+    padding: 0 0 12px;
+    text-align: justify; }
+
+.events {
+  flex-direction: column; }
+
+.events.section-title {
+  float: left;
+  width: 400px; }
+
+.events.section-description {
+  float: left;
+  width: 400px; }
+
+.event-display {
+  align-items: center;
+  margin: 20px auto;
+  width: 80%; }
+
+.event-list {
+  padding: 20px 0 0; }
+
+.event-container {
+  flex-flow: column;
+  padding: 30px 0; }
+
+.event-title {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 0 0 8px; }
+
+.event-date {
+  float: left;
+  font-size: 10px;
+  width: 36px; }
+
+.event-location {
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+.event-description {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 10px 0 10px;
+  text-align: justify; }
+
+.event-rsvp {
+  margin: 8px 0 60px; }
+  .event-rsvp.private {
+    background: #1e1e1e;
+    color: #fff;
+    cursor: default; }
+  .event-rsvp.coming-soon {
+    transition: none; }
+    .event-rsvp.coming-soon:hover {
+      background: #fff;
+      color: #1e1e1e;
+      cursor: default; }
+
+.ah-page .sectional-image {
+  padding: 0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .ah-page .sectional-image#automating-humanity--section-one-image {
+    background: url(../images/automatingHumanityMockup.jpg) center no-repeat;
+    background-color: #b0b7c5;
+    background-position: 30% 45%;
+    background-size: 110%; }
+  .ah-page .sectional-image#automating-humanity--section-two-image {
+    background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+    background-position-y: 95%;
+    background-size: 105%; }
+  .ah-page .sectional-image#automating-humanity--section-three-image {
+    background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+    background-position-y: 95%;
+    background-size: 105%; }
+.ah-page .vertical-line3 {
+  height: 850px;
+  position: absolute;
+  top: 350px; }
+.ah-page .vertical-line4 {
+  height: 1200px;
+  position: absolute;
+  top: 2247px; }
+.ah-page .vertical-line5 {
+  height: 1200px;
+  position: absolute;
+  top: 3360px; }
+.ah-page .what-you-learn {
+  padding: 20px 0 0; }
+  .ah-page .what-you-learn .wyl--learning {
+    padding: 0 0 12px;
+    text-align: justify; }
+.ah-page .sample-quotes {
+  list-style-image: url(../images/quote-marks.png); }
+  .ah-page .sample-quotes .sample-quotes--quote {
+    padding: 0 0 8px;
+    text-align: justify; }
+  .ah-page .sample-quotes .sample-quotes--person {
+    padding: 0 0 20px; }
+.ah-page .toc-outline {
+  padding: 0 0 20px; }
+  .ah-page .toc-outline .toc-outline--section-title {
+    padding: 0 0 12px; }
+  .ah-page .toc-outline .toc-outline--chapter-title {
+    padding: 0; }
+.ah-page .fine-print {
+  float: left;
+  padding: 10px 0 0; }
+
+.inner-section-container--wide {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 40px 0 0; }
+
+.inner-section--card-container {
+  width: 31%; }
+
+.inner-section--card-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.inner-section--card-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
+
+.inner-section--card-description {
+  text-align: justify; }
+
+#get-involved-hero {
+  background: url(../images/getInvolved.jpg) no-repeat center center fixed;
+  background-size: 100%;
+  background-position-y: 0%; }
+
+.foundation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0 0; }
+
+.foundation-container {
+  padding: 0 0 30px;
+  width: 31%; }
+
+.foundation-image {
+  background: #1e1e1e;
+  height: 200px;
+  width: 100%; }
+
+.foundation-name {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 20px 0 8px; }
+
+.foundation-image#code-dot-org {
+  background: url(../images/code-dot-org.jpg); }
+.foundation-image#coder-dojo {
+  background: url(../images/coder-dojo.jpg); }
+.foundation-image#free-code-camp {
+  background: url(../images/free-code-camp.jpg); }
+.foundation-image#girls-who-code {
+  background: url(../images/girls-who-code.jpg); }
+.foundation-image#black-girls-who-code {
+  background: url(../images/black-girls-who-code.jpg); }
+.foundation-image#collective-for-youth {
+  background: url(../images/collective-for-youth.jpg); }
+
+.donation-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0 0; }
+
+.donation-item-container {
+  padding: 30px 0;
+  width: 100%; }
+
+.donation-item-image {
+  background: #1e1e1e;
+  height: 200px; }
+  .donation-item-image#good-badge {
+    background: url(../images/good-badge.jpg) center 40% no-repeat;
+    background-size: 130%; }
+  .donation-item-image#rep-good {
+    background: url(../images/good-shirt.jpg) center 100% no-repeat; }
+  .donation-item-image#teach-a-classroom {
+    background: url(../images/teach-a-classroom.jpg) center 100% no-repeat;
+    background-size: 100%; }
+
+.donation-calculator {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 60px 0 0; }
+
+.donate-today {
+  text-align: center; }
+
+.good-partners {
+  padding: 100px 0 0; }
+
+.example.example5 {
+  background-color: #9169d8; }
+
+.example.example5 * {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+#example5-paymentRequest {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 10px; }
+
+.example.example5 fieldset {
+  border: 1px solid #b5a4ed;
+  padding: 15px;
+  border-radius: 6px; }
+
+.example.example5 fieldset legend {
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #cdd0f8;
+  background-color: #9169d8; }
+
+.example.example5 fieldset legend + * {
+  clear: both; }
+
+.example.example5 .card-only {
+  display: block; }
+
+.example.example5 .payment-request-available {
+  display: none; }
+
+.example.example5 .row {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px; }
+
+.example.example5 .field {
+  position: relative;
+  width: 100%; }
+
+.example.example5 .field + .field {
+  margin-left: 10px; }
+
+.example.example5 label {
+  width: 100%;
+  color: #cdd0f8;
+  font-size: 13px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.example.example5 .input {
+  width: 100%;
+  color: #fff;
+  background: transparent;
+  padding: 5px 0 6px 0;
+  border-bottom: 1px solid #a988ec;
+  transition: border-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.example.example5 .input::-webkit-input-placeholder {
+  color: #bfaef6; }
+
+.example.example5 .input::-moz-placeholder {
+  color: #bfaef6; }
+
+.example.example5 .input:-ms-input-placeholder {
+  color: #bfaef6; }
+
+.example.example5 .input.StripeElement--focus,
+.example.example5 .input:focus {
+  border-color: #fff; }
+
+.example.example5 .input.StripeElement--invalid {
+  border-color: #ffc7ee; }
+
+.example.example5 input:-webkit-autofill,
+.example.example5 select:-webkit-autofill {
+  -webkit-text-fill-color: #fce883;
+  transition: background-color 100000000s;
+  -webkit-animation: 1ms void-animation-out; }
+
+.example.example5 .StripeElement--webkit-autofill {
+  background: transparent !important; }
+
+.example.example5 input,
+.example.example5 button,
+.example.example5 select {
+  -webkit-animation: 1ms void-animation-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+  border-radius: 0; }
+
+.example.example5 select.input,
+.example.example5 select:-webkit-autofill {
+  background-image: url('data:image/svg+xml;utf8,<svg width="10px" height="5px" viewBox="0 0 10 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fff" d="M5.35355339,4.64644661 L9.14644661,0.853553391 L9.14644661,0.853553391 C9.34170876,0.658291245 9.34170876,0.341708755 9.14644661,0.146446609 C9.05267842,0.0526784202 8.92550146,-2.43597394e-17 8.79289322,0 L1.20710678,0 L1.20710678,0 C0.930964406,5.07265313e-17 0.707106781,0.223857625 0.707106781,0.5 C0.707106781,0.632608245 0.759785201,0.759785201 0.853553391,0.853553391 L4.64644661,4.64644661 L4.64644661,4.64644661 C4.84170876,4.84170876 5.15829124,4.84170876 5.35355339,4.64644661 Z" id="shape"></path></svg>');
+  background-position: 100%;
+  background-size: 10px 5px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 20px; }
+
+.example.example5 button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0 0;
+  background-color: #fff;
+  border-radius: 6px;
+  color: #9169d8;
+  font-weight: 500;
+  cursor: pointer; }
+
+.example.example5 button:active {
+  background-color: #cdd0f8; }
+
+.example.example5 .error svg .base {
+  fill: #fff; }
+
+.example.example5 .error svg .glyph {
+  fill: #9169d8; }
+
+.example.example5 .error .message {
+  color: #fff; }
+
+.example.example5 .success .icon .border {
+  stroke: #bfaef6; }
+
+.example.example5 .success .icon .checkmark {
+  stroke: #fff; }
+
+.example.example5 .success .title {
+  color: #fff; }
+
+.example.example5 .success .message {
+  color: #cdd0f8; }
+
+.example.example5 .success .reset path {
+  fill: #fff; }
+
+.ah-page .sectional-image {
+  padding: 0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .ah-page .sectional-image#we-need-to-talk--section-one-image {
+    background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+    background-color: #b0b7c5;
+    background-position: 30% 45%;
+    background-size: 110%; }
+  .ah-page .sectional-image#we-need-to-talk--section-two-image {
+    background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+    background-position-y: 95%;
+    background-size: 105%; }
+  .ah-page .sectional-image#we-need-to-talk--section-three-image {
+    background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+    background-position-y: 95%;
+    background-size: 105%; }
+.ah-page .vertical-line3 {
+  height: 850px;
+  position: absolute;
+  top: 350px; }
+.ah-page .vertical-line4 {
+  height: 1200px;
+  position: absolute;
+  top: 2040px; }
+.ah-page .vertical-line5 {
+  height: 1200px;
+  position: absolute;
+  top: 3360px; }
+.ah-page .what-you-learn {
+  padding: 20px 0 0; }
+  .ah-page .what-you-learn .wyl--learning {
+    padding: 0 0 12px;
+    text-align: justify; }
+.ah-page .sample-quotes {
+  list-style-image: url(../images/quote-marks.png); }
+  .ah-page .sample-quotes .sample-quotes--quote {
+    padding: 0 0 8px;
+    text-align: justify; }
+  .ah-page .sample-quotes .sample-quotes--person {
+    padding: 0 0 20px; }
+.ah-page .toc-outline {
+  padding: 0 0 20px; }
+  .ah-page .toc-outline .toc-outline--section-title {
+    padding: 0 0 12px; }
+  .ah-page .toc-outline .toc-outline--chapter-title {
+    padding: 0; }
+.ah-page .fine-print {
+  float: left;
+  padding: 10px 0 0; }
+
+.resources-nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 160px 0 0;
+  width: 80%; }
+
+.resources-nav--link {
+  font-size: 21px;
+  width: auto; }
+
+.resource-offerings-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.resource-offering {
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  margin: 0 0 30px;
+  padding: 30px;
+  text-decoration: none;
+  transition: .3s linear;
+  width: 31%; }
+  .resource-offering:hover {
+    background: #1e1e1e;
+    color: #fff; }
+
+.resource-title {
+  font-family: "noe-display", serif;
+  font-size: 21px;
+  padding: 60% 0 10px; }
+
+.resource-description {
+  text-align: left; }
+
+#technicalSupportCat {
+  width: 530px; }
+
+@media (max-width: 1024px) {
+  .sectional-image {
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .sectional-image#page-one--section-one {
+      background: url(../images/caliCity--tablet.jpg) no-repeat center center fixed; }
+    .sectional-image#page-one--section-two {
+      background: url(../images/carnival--tablet.jpg) no-repeat center center fixed;
+      background-size: 100%;
+      background-position-y: 5%; }
+    .sectional-image#page-one--section-resources {
+      background: url(../images/resources--tablet.jpg) no-repeat center center fixed;
+      background-size: 140%;
+      background-position-y: 35%; }
+
+  .inner-section-container--wide {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 60px 0; }
+
+  .inner-section-container--card-container, .inner-section--card-container {
+    width: 48%; }
+
+  .inner-section--card-image {
+    background: #1e1e1e;
+    height: 200px;
+    width: 100%; }
+
+  .inner-section--card-name {
+    font-family: "noe-display", serif;
+    font-size: 21px;
+    padding: 20px 0 8px; }
+
+  #get-involved-hero {
+    background: url(../images/getInvolved--tablet.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 0%; }
+
+  .footer {
+    bottom: -430px; }
+
+  .menu-container {
+    padding: 60px 0; }
+    .menu-container.open {
+      top: -470px; }
+
+  .internal-menu-container.buy-now {
+    padding: 0 10% 0 0;
+    width: 60%; }
+    .internal-menu-container.buy-now .product-offer {
+      background-size: 100%;
+      height: 250px;
+      width: 390px; }
+  .internal-menu-container.links {
+    width: 20%; }
+  .internal-menu-container.social-links {
+    width: 20%; }
+
+  .ah-page .sectional-image {
+    padding: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .ah-page .sectional-image#we-need-to-talk--section-one-image {
+      background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+      background-color: #b0b7c5;
+      background-position: 47% 45%;
+      background-size: 170%; }
+    .ah-page .sectional-image#we-need-to-talk--section-two-image {
+      background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+    .ah-page .sectional-image#we-need-to-talk--section-three-image {
+      background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+  .ah-page .what-you-learn {
+    padding: 20px 0 0; }
+    .ah-page .what-you-learn .wyl--learning {
+      padding: 0 0 12px;
+      text-align: justify; }
+  .ah-page .sample-quotes {
+    list-style-image: url(../images/quote-marks.png); }
+    .ah-page .sample-quotes .sample-quotes--quote {
+      padding: 0 0 8px;
+      text-align: justify; }
+    .ah-page .sample-quotes .sample-quotes--person {
+      padding: 0 0 20px; }
+  .ah-page .toc-outline {
+    padding: 0 0 20px; }
+    .ah-page .toc-outline .toc-outline--section-title {
+      padding: 0 0 12px; }
+    .ah-page .toc-outline .toc-outline--chapter-title {
+      padding: 0; }
+  .ah-page .fine-print {
+    float: left;
+    padding: 10px 0 0; }
+
+  .resources-nav-container {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 80px 0 0;
+    text-align: center; }
+
+  .resources-nav--link {
+    font-size: 21px;
+    padding: 0 0 20px; }
+
+  .resource-offering {
+    width: 49%; }
+
+  #technicalSupportCat {
+    width: 530px; } }
+@media (max-width: 786px) {
+  .section-title {
+    font-size: 44px;
+    line-height: 46px;
+    padding: 0 0 20px; }
+
+  .sectional-image {
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .sectional-image#page-one--section-one {
+      background: url(../images/caliCity--tablet.jpg) no-repeat center center fixed; }
+    .sectional-image#page-one--section-two {
+      background: url(../images/carnival--tablet.jpg) no-repeat center center fixed;
+      background-size: 100%;
+      background-position-y: 5%; }
+    .sectional-image#page-one--section-resources {
+      background: url(../images/resources--tablet.jpg) no-repeat center center fixed;
+      background-size: 140%;
+      background-position-y: 35%; }
+
+  .button.hero-button {
+    width: 340px; }
+
+  .vertical-line, .vertical-line6, .ah-page .vertical-line3, .ah-page .vertical-line5 {
+    left: 95%; }
+
+  .vertical-line2, .ah-page .vertical-line4 {
+    left: 5%; }
+
+  section {
+    padding: 80px 0; }
+
+  .container {
+    font-weight: 400; }
+
+  .inner-section-container {
+    margin: 0 auto;
+    width: 340px; }
+
+  .vertical-line {
+    display: none; }
+
+  .vertical-line2 {
+    display: none; }
+
+  .hero-title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 15px; }
+
+  .hero-description {
+    font-size: 14px;
+    font-weight: 400; }
+
+  .feature-display {
+    margin: 20px auto;
+    width: 80%; }
+
+  .section-quote {
+    font-size: 24px;
+    margin: 20px auto;
+    width: 340px; }
+
+  .ah-page .vertical-line3 {
+    display: none; }
+  .ah-page .vertical-line4 {
+    display: none; }
+  .ah-page .vertical-line5 {
+    display: none; }
+  .ah-page .sectional-image#automating-humanity--section-one-image {
+    background-size: 650px;
+    background-position: center; }
+  .ah-page .sectional-image#automating-humanity--section-two-image {
+    background-position: 65% 95%;
+    background-size: 185%; }
+  .ah-page .sectional-image#automating-humanity--section-three-image {
+    background-position: 65% 95%;
+    background-size: 185%; }
+
+  .footer {
+    height: 710px;
+    position: sticky;
+    bottom: -652px; }
+
+  .sticky-footer-container {
+    background: #1e1e1e;
+    color: #FFF;
+    font-weight: 400;
+    padding: 20px 0;
+    z-index: 2; }
+
+  .menu-container {
+    padding: 35px 0 10px; }
+    .menu-container.open {
+      top: -610px; }
+
+  .inner-menu-container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    width: 360px; }
+
+  .internal-menu-container {
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 0; }
+    .internal-menu-container.buy-now {
+      width: 100%; }
+      .internal-menu-container.buy-now .product-offer {
+        background-size: 100%;
+        height: 200px;
+        width: 360px; }
+      .internal-menu-container.buy-now .button {
+        width: 360px; }
+    .internal-menu-container.links {
+      width: 100%; }
+    .internal-menu-container.social-links {
+      width: 100%; }
+
+  .inner-section-container--wide {
+    margin: 0 auto;
+    padding: 30px 0 0;
+    width: 340px; }
+
+  .inner-section-container--card-container, .inner-section--card-container {
+    width: 100%; }
+
+  #get-involved-hero {
+    background: url(../images/getInvolved--mobile.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 0%; }
+
+  .donation-item-container {
+    padding: 30px 0; }
+
+  .good-partners {
+    padding: 100px 0 0; }
+
+  .ah-page .sectional-image {
+    padding: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .ah-page .sectional-image#we-need-to-talk--section-one-image {
+      background: url(../images/weNeedToTalkProductMockup--wide.jpg) center no-repeat;
+      background-color: #b0b7c5;
+      background-position: 47% 45%;
+      background-size: 230%; }
+    .ah-page .sectional-image#we-need-to-talk--section-two-image {
+      background: url(../images/automatingHumanityProductMockup3.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+    .ah-page .sectional-image#we-need-to-talk--section-three-image {
+      background: url(../images/automatingHumanityProductMockup2.jpg) no-repeat;
+      background-position-y: 95%;
+      background-size: 105%; }
+  .ah-page .what-you-learn {
+    padding: 20px 0 0; }
+    .ah-page .what-you-learn .wyl--learning {
+      padding: 0 0 12px;
+      text-align: justify; }
+  .ah-page .sample-quotes {
+    list-style-image: url(../images/quote-marks.png); }
+    .ah-page .sample-quotes .sample-quotes--quote {
+      padding: 0 0 8px;
+      text-align: justify; }
+    .ah-page .sample-quotes .sample-quotes--person {
+      padding: 0 0 20px; }
+  .ah-page .toc-outline {
+    padding: 0 0 20px; }
+    .ah-page .toc-outline .toc-outline--section-title {
+      padding: 0 0 12px; }
+    .ah-page .toc-outline .toc-outline--chapter-title {
+      padding: 0; }
+  .ah-page .fine-print {
+    float: left;
+    padding: 10px 0 0; }
+
+  .resources-nav-container {
+    padding: 60px 0 0; }
+
+  .resources-nav--link {
+    font-size: 14px;
+    padding: 0 0 10px; }
+
+  .resource-offering {
+    width: 100%; }
+
+  #technicalSupportCat {
+    width: 530px; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+.sectional-image {
+  height: 300px;
+
+  @include background-cover;
+
+  &#page-one--section-one {
+    background: url(../images/caliCity--tablet.jpg) no-repeat center center fixed;
+  }
+
+  &#page-one--section-two {
+    background: url(../images/carnival--tablet.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 5%;
+  }
+
+  &#page-one--section-resources {
+    background: url(../images/resources--tablet.jpg) no-repeat center center fixed;
+    background-size: 140%;
+    background-position-y: 35%;
+  }
+}

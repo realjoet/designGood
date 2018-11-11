@@ -21,6 +21,7 @@ My globals file probably needs something from all three of the previously import
 @import "views/resources";
 
 @media (max-width: 1024px) {
+  @import "tablet/elements";
   @import "tablet/get-involved";
   @import "tablet/footer";
   @import "tablet/we-need-to-talk";
