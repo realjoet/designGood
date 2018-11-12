@@ -1002,6 +1002,9 @@ section.welcome {
   .vertical-line2 {
     display: none; }
 
+  .vertical-line6 {
+    display: none; }
+
   .hero-title {
     font-size: 60px;
     line-height: 60px;
