@@ -37,6 +37,10 @@ section {
     top: 5500px;
 }
 
+#page-one--section-one {
+  background: url(../images/caliCity.png) no-repeat center center fixed;
+}
+
 
 
 //! WELCOME __________________
@@ -104,8 +108,11 @@ section.welcome {
 //! RESOURCES SECTION ______________________
 //! ____________________________________
 
-
-
+#page-one--section-resources {
+  background: url(../images/resources.png) no-repeat center center fixed;
+  background-size: 140%;
+  background-position-y: 35%;
+}
 
 
 
@@ -131,6 +138,12 @@ section.welcome {
 
 //! EVENTS _____________________________
 //! ____________________________________
+
+#page-one--section-two {
+  background: url(../images/carnival.png) no-repeat center center fixed;
+  background-size: 100%;
+  background-position-y: 5%;
+}
 
 .events {
   flex-direction: column;

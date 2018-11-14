@@ -23,6 +23,9 @@ section {
   display: none;
 }
 
+#page-one--section-one {
+  background: url(../images/caliCity--tablet.png) no-repeat center center fixed;
+}
 
 
 
@@ -55,4 +58,25 @@ section {
   margin: 20px auto;
   width: 340px;
 
+}
+
+
+
+//! RESOURCE SECTION ______________________
+//! ____________________________________
+
+#page-one--section-resources {
+  background: url(../images/resources--tablet.png) no-repeat center center fixed;
+  background-size: 140%;
+  background-position-y: 35%;
+}
+
+
+//! EVENTS SECTION ______________________
+//! ____________________________________
+
+#page-one--section-two {
+  background: url(../images/carnival--tablet.png) no-repeat center center fixed;
+  background-size: 100%;
+  background-position-y: 5%;
 }

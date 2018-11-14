@@ -148,16 +148,6 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .sectional-image#page-one--section-one {
-    background: url(../images/caliCity.jpg) no-repeat center center fixed; }
-  .sectional-image#page-one--section-two {
-    background: url(../images/carnival.jpg) no-repeat center center fixed;
-    background-size: 100%;
-    background-position-y: 5%; }
-  .sectional-image#page-one--section-resources {
-    background: url(../images/resources.jpg) no-repeat center center fixed;
-    background-size: 140%;
-    background-position-y: 35%; }
 
 .button {
   border: solid 1px #1e1e1e;
@@ -340,6 +330,9 @@ section {
   position: absolute;
   top: 5500px; }
 
+#page-one--section-one {
+  background: url(../images/caliCity.png) no-repeat center center fixed; }
+
 section.welcome {
   padding: 160px 0; }
 
@@ -381,6 +374,11 @@ section.welcome {
       color: #1e1e1e;
       font-weight: 500; }
 
+#page-one--section-resources {
+  background: url(../images/resources.png) no-repeat center center fixed;
+  background-size: 140%;
+  background-position-y: 35%; }
+
 .book-display {
   align-items: center;
   margin: 20px auto; }
@@ -390,6 +388,11 @@ section.welcome {
   .what-you-learn .wyl--learning {
     padding: 0 0 12px;
     text-align: justify; }
+
+#page-one--section-two {
+  background: url(../images/carnival.png) no-repeat center center fixed;
+  background-size: 100%;
+  background-position-y: 5%; }
 
 .events {
   flex-direction: column; }
@@ -966,16 +969,6 @@ section.welcome {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-    .sectional-image#page-one--section-one {
-      background: url(../images/caliCity--tablet.jpg) no-repeat center center fixed; }
-    .sectional-image#page-one--section-two {
-      background: url(../images/carnival--tablet.jpg) no-repeat center center fixed;
-      background-size: 100%;
-      background-position-y: 5%; }
-    .sectional-image#page-one--section-resources {
-      background: url(../images/resources--tablet.jpg) no-repeat center center fixed;
-      background-size: 140%;
-      background-position-y: 35%; }
 
   .button.hero-button {
     width: 340px; }
@@ -1005,6 +998,9 @@ section.welcome {
   .vertical-line6 {
     display: none; }
 
+  #page-one--section-one {
+    background: url(../images/caliCity--tablet.png) no-repeat center center fixed; }
+
   .hero-title {
     font-size: 60px;
     line-height: 60px;
@@ -1022,6 +1018,16 @@ section.welcome {
     font-size: 24px;
     margin: 20px auto;
     width: 340px; }
+
+  #page-one--section-resources {
+    background: url(../images/resources--tablet.png) no-repeat center center fixed;
+    background-size: 140%;
+    background-position-y: 35%; }
+
+  #page-one--section-two {
+    background: url(../images/carnival--tablet.png) no-repeat center center fixed;
+    background-size: 100%;
+    background-position-y: 5%; }
 
   .ah-page .vertical-line3 {
     display: none; }
