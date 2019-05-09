@@ -12,59 +12,57 @@ section {
   font-size: 1rem;
 }
 
-
-.vertical-line {
-  @extend %vertical-line--right;
-
-  height: 700px;
-  position: absolute;
-    top: 350px;
-}
-
-.vertical-line2 {
-  @extend %vertical-line--left;
-
-  height: 1200px;
-  position: absolute;
-    top: 2650px;
-}
-
-.vertical-line6 {
-  @extend %vertical-line--right;
-
-  height: 1000px;
-  position: absolute;
-    top: 5500px;
+.body-container {
+  overflow: hidden;
+  position: relative;
 }
 
 #page-one--section-one {
   background: url(../images/caliCity.png) no-repeat center center fixed;
 }
 
+.beaconLogo--deco {
+  height: 115px;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  position: absolute;
+    top: 215px;
+  width: 490px;
+}
+
+#beaconLeft {
+  left: -250px;
+  transform: rotateZ(90deg);
+}
+
+#beaconRight {
+  right: -250px;
+  transform: rotateZ(-90deg);
+}
 
 
 //! WELCOME __________________
 //! ____________________________________
 section.welcome {
-  padding: 160px 0;
+  background: $beaconYellow;
+  height: 550px;
 }
 
-.hero-title {
-  color: $goodBlack;
-  font-family: 'noe-display';
-  font-weight: 800;
-  font-size: 120px;
-  line-height: 120px;
-  padding: 0 0 30px;
-  text-align: center;
-  width: 100%;
+.brandingContainer {
+  margin: auto auto;
+  width: 770px;
+}
+
+.beaconLogo {
+  height: 25px;
+  margin: 0 0 13px 5px;
+  width: 150px;
 }
 
 .hero-description {
-  font-size: 21px;
+  font-size: 45px;
   font-weight: 200;
-  text-align: center;
-  width: 100%;
+  line-height: 58px;
 }
 
 .feature-container {
@@ -83,23 +81,7 @@ section.welcome {
 //! TECH CHECK SECTION ______________________
 //! ____________________________________
 .tech-check {
-  background: $goodBlack;
-  color: #ffffff;
-
-  .section-title {
-    color: #ffffff;
-  }
-
-  .button {
-    border: solid 1px #ffffff;
-    color: #ffffff;
-
-    &:hover {
-      background: #ffffff;
-      color: $goodBlack;
-      font-weight: 500;
-    }
-  }
+  background: $beaconYellow;
 }
 
 
@@ -160,9 +142,7 @@ section.welcome {
 }
 
 .event-display {
-  align-items: center;
   margin: 20px auto;
-  width: 80%;
 }
 
 .event-list {
@@ -175,7 +155,7 @@ section.welcome {
 }
 
 .event-title {
-  font-family: $noeDisplay;
+  font-family: $montserrat;
   font-size: 21px;
   padding: 0 0 8px;
 }

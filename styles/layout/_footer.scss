@@ -20,13 +20,15 @@
 
 .design-good-logo {
   float: left;
-  font-family: $noeDisplay;
-  font-weight: 400;
   width: 40%;
 
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .beaconLogo--footer{
+    width: 120px;
   }
 }
 
@@ -82,8 +84,6 @@
     }
 
     .button {
-      border: solid 1px #fff;
-      color: #fff;
       text-decoration: none;
       width: 390px;
 

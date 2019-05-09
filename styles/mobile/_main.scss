@@ -11,16 +11,23 @@ section {
   width: 340px;
 }
 
-.vertical-line {
-  display: none;
+.beaconLogo--deco {
+  height: 57px;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  position: absolute;
+    top: 120px;
+  width: 250px;
 }
 
-.vertical-line2 {
-  display: none;
+#beaconLeft {
+  left: -130px;
+  transform: rotateZ(90deg);
 }
 
-.vertical-line6 {
-  display: none;
+#beaconRight {
+  right: -130px;
+  transform: rotateZ(-90deg);
 }
 
 #page-one--section-one {
@@ -32,15 +39,25 @@ section {
 //! WELCOME __________________
 //! ____________________________________
 
-.hero-title {
-  font-size: 60px;
-  line-height: 60px;
-  padding: 0 0 15px;
+section.welcome {
+  background: $beaconYellow;
+  height: 300px;
+}
+
+.brandingContainer {
+  width: 300px;
+}
+
+.beaconLogo {
+  height: 13px;
+  margin: 0 0 5px;
+  width: 75px;
 }
 
 .hero-description {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 28px;
 }
 
 .feature-display {
